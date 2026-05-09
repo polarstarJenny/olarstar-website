@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polarstar Chemical — Coalescing Agents & Industrial Solvents</title>
+  <meta name="description" content="Polarstar Chemical supplies premium coalescing agents, glycol ethers, and hydrocarbon solvents for the global paints, coatings, and industrial sectors.">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600&family=Source+Code+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-dark: #0a1628;
+      --navy: #061b31;
+      --slate: #64748d;
+      --label: #273951;
+      --purple: #1a56db;
+      --purple-hover: #1e40af;
+      --purple-light: #dbeafe;
+      --border: #e2e8f0;
+      --border-soft: #f1f5f9;
+      --green: #059669;
+      --green-bg: rgba(5, 150, 105, 0.08);
+      --shadow-blue: rgba(50, 50, 93, 0.08);
+      --shadow-dark: rgba(0, 0, 0, 0.04);
+      --amber: #d97706;
+      --amber-bg: rgba(217, 119, 6, 0.06);
+      --indigo: #4338ca;
+      --indigo-bg: rgba(67, 56, 202, 0.06);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Source Sans 3', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      color: var(--slate);
+      background: var(--bg);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ========== NAVIGATION ========== */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-soft);
+    }
+    .nav-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--navy);
+      letter-spacing: -0.3px;
+      text-decoration: none;
+    }
+    .nav-logo-icon {
+      width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, var(--purple), #3b82f6);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--navy);
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: var(--purple); }
+    .nav-cta {
+      background: var(--purple);
+      color: #fff !important;
+      padding: 8px 20px;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: background 0.15s;
+    }
+    .nav-cta:hover { background: var(--purple-hover); }
+
+    /* ========== HERO ========== */
+    .hero {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 96px 32px 80px;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: var(--purple-light);
+      color: var(--purple);
+      font-size: 13px;
+      font-weight: 500;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 28px;
+      letter-spacing: 0.3px;
+    }
+    .hero h1 {
+      font-size: 52px;
+      font-weight: 300;
+      color: var(--navy);
+      line-height: 1.12;
+      letter-spacing: -1.2px;
+      max-width: 800px;
+      margin: 0 auto 20px;
+    }
+    .hero h1 span {
+      color: var(--purple);
+      font-weight: 400;
+    }
+    .hero p {
+      font-size: 19px;
+      font-weight: 300;
+      line-height: 1.55;
+      color: var(--slate);
+      max-width: 620px;
+      margin: 0 auto 40px;
+    }
+    .hero-btns {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 12px 28px;
+      font-size: 15px;
+      font-weight: 500;
+      font-family: inherit;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.15s;
+      border: none;
+    }
+    .btn-primary {
+      background: var(--purple);
+      color: #fff;
+    }
+    .btn-primary:hover { background: var(--purple-hover); }
+    .btn-ghost {
+      background: transparent;
+      color: var(--purple);
+      border: 1px solid var(--border);
+    }
+    .btn-ghost:hover { background: var(--purple-light); border-color: var(--purple); }
+
+    /* ========== STATS BAR ========== */
+    .stats {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 32px 80px;
+      display: flex;
+      justify-content: center;
+      gap: 64px;
+      flex-wrap: wrap;
+    }
+    .stat {
+      text-align: center;
+    }
+    .stat-num {
+      font-size: 36px;
+      font-weight: 300;
+      color: var(--navy);
+      letter-spacing: -0.5px;
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 13px;
+      color: var(--slate);
+      margin-top: 6px;
+      font-weight: 400;
+    }
+
+    /* ========== SECTION COMMON ========== */
+    section {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 80px 32px;
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .section-header h2 {
+      font-size: 34px;
+      font-weight: 300;
+      color: var(--navy);
+      letter-spacing: -0.6px;
+      margin-bottom: 12px;
+    }
+    .section-header p {
+      font-size: 17px;
+      color: var(--slate);
+      font-weight: 300;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* ========== PRODUCTS ========== */
+    .products {
+      background: #f8fafc;
+      max-width: 100%;
+      padding: 80px 32px;
+    }
+    .products-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    .product-category {
+      margin-bottom: 48px;
+    }
+    .product-category:last-child { margin-bottom: 0; }
+    .cat-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .cat-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    .cat-icon.coalescing { background: var(--purple-light); color: var(--purple); }
+    .cat-icon.glycol { background: var(--green-bg); color: var(--green); }
+    .cat-icon.hydrocarbon { background: var(--amber-bg); color: var(--amber); }
+    .cat-icon.other { background: var(--indigo-bg); color: var(--indigo); }
+
+    .cat-title {
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--navy);
+      letter-spacing: -0.3px;
+    }
+    .cat-desc {
+      font-size: 14px;
+      color: var(--slate);
+      font-weight: 300;
+      margin-top: 2px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 14px;
+    }
+    .product-card {
+      background: #fff;
+      border: 1px solid var(--border-soft);
+      border-radius: 8px;
+      padding: 20px 22px;
+      transition: all 0.2s;
+    }
+    .product-card:hover {
+      border-color: #cbd5e1;
+      box-shadow: var(--shadow-blue) 0px 12px 24px -8px, var(--shadow-dark) 0px 6px 12px -4px;
+      transform: translateY(-1px);
+    }
+    .product-card h4 {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--navy);
+      letter-spacing: -0.2px;
+      margin-bottom: 4px;
+    }
+    .product-card .alias {
+      font-size: 13px;
+      color: var(--purple);
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    .product-card .desc {
+      font-size: 14px;
+      color: var(--slate);
+      font-weight: 300;
+      line-height: 1.5;
+    }
+    .product-card .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 12px;
+    }
+    .tag {
+      font-size: 11px;
+      font-weight: 500;
+      padding: 3px 10px;
+      border-radius: 4px;
+      background: #f1f5f9;
+      color: var(--slate);
+    }
+
+    /* ========== WHY US ========== */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .why-card {
+      padding: 32px 28px;
+      border: 1px solid var(--border-soft);
+      border-radius: 10px;
+      transition: box-shadow 0.2s;
+    }
+    .why-card:hover {
+      box-shadow: var(--shadow-blue) 0px 16px 32px -12px, var(--shadow-dark) 0px 8px 16px -8px;
+    }
+    .why-card .icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--purple-light);
+      color: var(--purple);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+    .why-card h3 {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .why-card p {
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--slate);
+      line-height: 1.6;
+    }
+
+    /* ========== CONTACT ========== */
+    .contact {
+      background: var(--bg-dark);
+      max-width: 100%;
+      padding: 80px 32px;
+    }
+    .contact-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .contact-text h2 {
+      font-size: 34px;
+      font-weight: 300;
+      color: #fff;
+      letter-spacing: -0.6px;
+      margin-bottom: 16px;
+    }
+    .contact-text p {
+      font-size: 17px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      color: rgba(255,255,255,0.8);
+      font-size: 15px;
+      font-weight: 400;
+    }
+    .contact-item .icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+    .contact-form {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 32px;
+    }
+    .contact-form h3 {
+      font-size: 20px;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 16px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 6px;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px 14px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 6px;
+      color: #fff;
+      font-family: inherit;
+      font-size: 14px;
+      transition: border-color 0.15s;
+      resize: vertical;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--purple);
+    }
+    .form-group textarea { min-height: 100px; }
+    .btn-submit {
+      width: 100%;
+      padding: 12px;
+      background: var(--purple);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      font-weight: 500;
+      font-family: inherit;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+    .btn-submit:hover { background: var(--purple-hover); }
+
+    /* ========== FOOTER ========== */
+    footer {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 32px 32px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--slate);
+      font-weight: 300;
+      border-top: 1px solid var(--border-soft);
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 34px; letter-spacing: -0.6px; }
+      .hero p { font-size: 16px; }
+      .contact-inner { grid-template-columns: 1fr; gap: 40px; }
+      .stats { gap: 32px; }
+      .section-header h2 { font-size: 28px; }
+      .product-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <span class="nav-logo-icon">P</span>
+      Polarstar Chemical
+    </a>
+    <ul class="nav-links">
+      <li><a href="#products">Products</a></li>
+      <li><a href="#why-us">Why Us</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-badge">📍 China-Based · Global Supply</div>
+  <h1>Premium <span>Coalescing Agents</span> & Industrial Solvents</h1>
+  <p>
+    Reliable chemical supply partner for the global paints, coatings, inks,
+    and industrial sectors. Quality products, competitive pricing, and dedicated service.
+  </p>
+  <div class="hero-btns">
+    <a href="#products" class="btn btn-primary">View Products →</a>
+    <a href="#contact" class="btn btn-ghost">Get a Quote</a>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<div class="stats">
+  <div class="stat">
+    <div class="stat-num">10+</div>
+    <div class="stat-label">Core Products</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">3</div>
+    <div class="stat-label">Product Categories</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">Global</div>
+    <div class="stat-label">Supply Network</div>
+  </div>
+</div>
+
+<!-- ===== PRODUCTS ===== -->
+<div class="products" id="products">
+  <div class="products-inner">
+    <div class="section-header">
+      <h2>Our Products</h2>
+      <p>Comprehensive portfolio covering coalescing agents, glycol ethers, and hydrocarbon solvents for diverse industrial applications.</p>
+    </div>
+
+    <!-- Category 1: Coalescing Agents -->
+    <div class="product-category">
+      <div class="cat-header">
+        <div class="cat-icon coalescing">🧪</div>
+        <div>
+          <div class="cat-title">Coalescing Agents</div>
+          <div class="cat-desc">Essential for water-based paints and coatings</div>
+        </div>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <h4>Texanol / RTC-12</h4>
+          <div class="alias">C₁₂ Ester Alcohol</div>
+          <div class="desc">The industry-standard coalescing agent for architectural and industrial water-based coatings. Excellent film formation at low temperatures.</div>
+          <div class="tags"><span class="tag">Water-based Coatings</span><span class="tag">Architectural</span></div>
+        </div>
+        <div class="product-card">
+          <h4>PNB</h4>
+          <div class="alias">Propylene Glycol n-Butyl Ether</div>
+          <div class="desc">High-performance coalescing agent with strong solvency. Ideal for high-gloss and industrial maintenance coatings.</div>
+          <div class="tags"><span class="tag">Industrial Coatings</span><span class="tag">High Gloss</span></div>
+        </div>
+        <div class="product-card">
+          <h4>DPNB</h4>
+          <div class="alias">Dipropylene Glycol n-Butyl Ether</div>
+          <div class="desc">Slower-evaporating coalescent for open-time extension. Excellent for water-based industrial and automotive coatings.</div>
+          <div class="tags"><span class="tag">Automotive</span><span class="tag">Extended Open Time</span></div>
+        </div>
+        <div class="product-card">
+          <h4>TPNB</h4>
+          <div class="alias">Tripropylene Glycol n-Butyl Ether</div>
+          <div class="desc">High-boiling coalescing agent for premium formulations. Maximum film integrity in demanding applications.</div>
+          <div class="tags"><span class="tag">Premium</span><span class="tag">High Temp</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category 2: Glycol Ethers -->
+    <div class="product-category">
+      <div class="cat-header">
+        <div class="cat-icon glycol">⚗️</div>
+        <div>
+          <div class="cat-title">Glycol Ethers & High-Boiling Solvents</div>
+          <div class="cat-desc">Versatile solvents for coatings, inks, and cleaning applications</div>
+        </div>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <h4>DPM</h4>
+          <div class="alias">Dipropylene Glycol Methyl Ether</div>
+          <div class="desc">Balanced evaporation rate — the go-to solvent for water-based coatings, inks, and cleaning formulations.</div>
+          <div class="tags"><span class="tag">Coatings</span><span class="tag">Inks</span><span class="tag">Cleaning</span></div>
+        </div>
+        <div class="product-card">
+          <h4>TPM</h4>
+          <div class="alias">Tripropylene Glycol Methyl Ether</div>
+          <div class="desc">Slow-evaporating glycol ether. Excellent for screen inks, overprint varnishes, and high-temperature applications.</div>
+          <div class="tags"><span class="tag">Screen Inks</span><span class="tag">High Temp</span></div>
+        </div>
+        <div class="product-card">
+          <h4>DPMA</h4>
+          <div class="alias">Dipropylene Glycol Methyl Ether Acetate</div>
+          <div class="desc">High-boiling solvent with excellent solvency. Premium choice for automotive, industrial coatings, and electronic cleaners.</div>
+          <div class="tags"><span class="tag">Automotive</span><span class="tag">Electronics</span><span class="tag">Premium</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category 3: Hydrocarbon Solvents -->
+    <div class="product-category">
+      <div class="cat-header">
+        <div class="cat-icon hydrocarbon">🛢️</div>
+        <div>
+          <div class="cat-title">Hydrocarbon Solvents</div>
+          <div class="cat-desc">High-purity solvents for rubber, adhesives, and specialized industrial use</div>
+        </div>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <h4>Cyclohexane</h4>
+          <div class="alias">C₆H₁₂ · 环己烷</div>
+          <div class="desc">High-purity cyclic hydrocarbon. Widely used in rubber processing, adhesives, and as a chemical intermediate.</div>
+          <div class="tags"><span class="tag">Rubber</span><span class="tag">Adhesives</span><span class="tag">High Purity</span></div>
+        </div>
+        <div class="product-card">
+          <h4>MCH</h4>
+          <div class="alias">Methylcyclohexane · 甲基环己烷</div>
+          <div class="desc">Premium hydrocarbon solvent with excellent solvency. Ideal for adhesives, sealants, and precision cleaning.</div>
+          <div class="tags"><span class="tag">Sealants</span><span class="tag">Cleaning</span></div>
+        </div>
+        <div class="product-card">
+          <h4>Isooctane</h4>
+          <div class="alias">2,2,4-Trimethylpentane · 异辛烷</div>
+          <div class="desc">Ultra-high purity reference-grade hydrocarbon. Used in fuel testing, laboratory standards, and specialty applications.</div>
+          <div class="tags"><span class="tag">Lab Grade</span><span class="tag">Reference Standard</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== WHY US ===== -->
+<section id="why-us">
+  <div class="section-header">
+    <h2>Why Partner With Polarstar</h2>
+    <p>We bridge China's manufacturing strength with global market needs.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="icon">🔬</div>
+      <h3>Product Expertise</h3>
+      <p>Deep knowledge of coalescing agents and solvents. We understand paint formulations, evaporation curves, and what formulators need.</p>
+    </div>
+    <div class="why-card">
+      <div class="icon">🏭</div>
+      <h3>Reliable Supply Chain</h3>
+      <p>Direct partnerships with quality Chinese manufacturers. Consistent product quality, stable supply, and competitive pricing.</p>
+    </div>
+    <div class="why-card">
+      <div class="icon">🌍</div>
+      <h3>Global Logistics</h3>
+      <p>Experienced in international chemical shipping. FCL, LCL, and flexitank options to fit your volume and timeline.</p>
+    </div>
+    <div class="why-card">
+      <div class="icon">🤝</div>
+      <h3>Partnership Approach</h3>
+      <p>We work as your China sourcing partner — not just a supplier. Market insights, product recommendations, and dedicated support.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<div class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="contact-text">
+      <h2>Let's Work Together</h2>
+      <p>
+        Looking for reliable coalescing agents or industrial solvents?
+        Tell us what you need and we'll get back to you within 24 hours.
+      </p>
+      <div class="contact-item">
+        <div class="icon">✉️</div>
+        marketing@polarstarchem.com
+      </div>
+      <div class="contact-item">
+        <div class="icon">📍</div>
+        China — Global Shipping
+      </div>
+    </div>
+    <div class="contact-form">
+      <h3>Send an Inquiry</h3>
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p style="display:none">
+          <label>Don't fill this out: <input name="bot-field"></label>
+        </p>
+        <div class="form-group">
+          <label>Company Name *</label>
+          <input type="text" name="company" placeholder="Your company" required>
+        </div>
+        <div class="form-group">
+          <label>Contact Person *</label>
+          <input type="text" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label>Email *</label>
+          <input type="email" name="email" placeholder="you@company.com" required>
+        </div>
+        <div class="form-group">
+          <label>Products of Interest</label>
+          <input type="text" name="products" placeholder="e.g., Texanol, DPM, Cyclohexane">
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="message" placeholder="Tell us about your requirements..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Inquiry →</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  © 2026 Polarstar Chemical. All rights reserved.
+</footer>
+
+</body>
+</html>
