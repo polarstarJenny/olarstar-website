@@ -1,649 +1,701 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Polarstar Chemical — Coalescing Agents & Industrial Solvents</title>
-  <meta name="description" content="Polarstar Chemical supplies premium coalescing agents, glycol ethers, and hydrocarbon solvents for the global paints, coatings, and industrial sectors.">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #ffffff;
-      --bg-light: #f8fafc;
-      --navy: #0f172a;
-      --slate: #475569;
-      --blue: #2563eb;
-      --blue-dark: #1d4ed8;
-      --blue-light: #eff6ff;
-      --teal: #0d9488;
-      --teal-light: #f0fdfa;
-      --amber: #d97706;
-      --amber-light: #fffbeb;
-      --indigo: #4f46e5;
-      --indigo-light: #eef2ff;
-      --border: #e2e8f0;
-      --radius: 12px;
-      --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-      --shadow-lg: 0 10px 25px -5px rgba(0,0,0,0.08), 0 4px 10px -2px rgba(0,0,0,0.04);
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: 'Source Sans 3', system-ui, -apple-system, sans-serif;
-      color: var(--slate);
-      background: var(--bg);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ========== NAV ========== */
-    nav {
-      position: sticky; top: 0; z-index: 100;
-      background: rgba(255,255,255,0.9);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-    }
-    .nav-inner {
-      max-width: 1200px; margin: 0 auto; padding: 0 24px;
-      display: flex; align-items: center; justify-content: space-between; height: 64px;
-    }
-    .nav-logo {
-      display: flex; align-items: center; gap: 10px;
-      font-size: 20px; font-weight: 600; color: var(--navy);
-      text-decoration: none; letter-spacing: -0.3px;
-    }
+     1|<!DOCTYPE html>
+     2|<html lang="en">
+     3|<head>
+     4|  <meta charset="UTF-8">
+     5|  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     6|  <title>Polarstar Chemical — Coating Additives, Coalescing Agents & Solvents</title>
+     7|  <meta name="description" content="Polarstar Chemical supplies coalescing agents, glycol ethers, paint additives (CAB, defoamers, dispersants), pigments, and fillers for the global coatings industry.">
+     8|  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     9|  <style>
+    10|    :root {
+    11|      --bg: #ffffff;
+    12|      --bg-light: #f8fafc;
+    13|      --navy: #0f172a;
+    14|      --slate: #475569;
+    15|      --blue: #2563eb;
+    16|      --blue-dark: #1d4ed8;
+    17|      --blue-light: #eff6ff;
+    18|      --teal: #0d9488;
+    19|      --teal-light: #f0fdfa;
+    20|      --amber: #d97706;
+    21|      --amber-light: #fffbeb;
+    22|      --indigo: #4f46e5;
+    23|      --indigo-light: #eef2ff;
+    24|      --border: #e2e8f0;
+    25|      --radius: 12px;
+    26|      --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+    27|      --shadow-lg: 0 10px 25px -5px rgba(0,0,0,0.08), 0 4px 10px -2px rgba(0,0,0,0.04);
+    28|    }
+    29|
+    30|    * { margin: 0; padding: 0; box-sizing: border-box; }
+    31|
+    32|    body {
+    33|      font-family: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+    34|      color: var(--slate);
+    35|      background: var(--bg);
+    36|      line-height: 1.6;
+    37|      -webkit-font-smoothing: antialiased;
+    38|    }
+    39|
+    40|    /* ========== NAV ========== */
+    41|    nav {
+    42|      position: sticky; top: 0; z-index: 100;
+    43|      background: rgba(255,255,255,0.9);
+    44|      backdrop-filter: blur(12px);
+    45|      border-bottom: 1px solid var(--border);
+    46|    }
+    47|    .nav-inner {
+    48|      max-width: 1200px; margin: 0 auto; padding: 0 24px;
+    49|      display: flex; align-items: center; justify-content: space-between; height: 64px;
+    50|    }
+    51|    .nav-logo {
+    52|      display: flex; align-items: center; gap: 10px;
+    53|      font-size: 20px; font-weight: 600; color: var(--navy);
+    54|      text-decoration: none; letter-spacing: -0.3px;
+    55|    }
     .nav-logo-img {
-      width: 38px; height: 38px;
-      background: linear-gradient(135deg, var(--blue), #7c3aed);
-      border-radius: 10px;
-      display: flex; align-items: center; justify-content: center;
-      color: white; font-size: 20px; font-weight: 700;
-    }
-    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
-    .nav-links a {
-      text-decoration: none; font-size: 14px; font-weight: 500;
-      color: var(--slate); transition: color 0.15s;
-    }
-    .nav-links a:hover { color: var(--blue); }
-    .nav-cta {
-      background: var(--blue); color: #fff !important;
-      padding: 8px 20px; border-radius: 8px; font-weight: 500;
-    }
-    .nav-cta:hover { background: var(--blue-dark); }
-
-    /* ========== HERO ========== */
-    .hero {
-      position: relative;
-      background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 40%, #1a3a5c 60%, #0f172a 100%);
-      overflow: hidden;
-    }
-    .hero-particles {
-      position: absolute; inset: 0;
-      background-image:
-        radial-gradient(circle at 20% 50%, rgba(37,99,235,0.15) 0%, transparent 50%),
-        radial-gradient(circle at 80% 30%, rgba(124,58,237,0.1) 0%, transparent 40%),
-        radial-gradient(circle at 50% 80%, rgba(13,148,136,0.08) 0%, transparent 40%);
-    }
-    .hero-grid {
-      position: absolute; inset: 0; opacity: 0.03;
-      background-image:
-        linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px);
-      background-size: 60px 60px;
-    }
-    .hero-content {
-      position: relative;
-      max-width: 1200px; margin: 0 auto; padding: 100px 24px 80px;
-      display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
-    }
-    .hero-badge {
-      display: inline-flex; align-items: center; gap: 6px;
-      background: rgba(37,99,235,0.15); color: #93c5fd;
-      font-size: 13px; font-weight: 500; padding: 5px 16px;
-      border-radius: 20px; margin-bottom: 24px;
-      border: 1px solid rgba(37,99,235,0.2);
-    }
-    .hero-badge .dot { width: 6px; height: 6px; background: #60a5fa; border-radius: 50%; }
-    .hero h1 {
-      font-size: 48px; font-weight: 300; color: #fff;
-      line-height: 1.15; letter-spacing: -0.8px; margin-bottom: 20px;
-    }
-    .hero h1 span {
-      background: linear-gradient(135deg, #60a5fa, #a78bfa);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-      background-clip: text; font-weight: 400;
-    }
-    .hero p {
-      font-size: 18px; font-weight: 300; color: rgba(255,255,255,0.6);
-      line-height: 1.6; margin-bottom: 36px; max-width: 480px;
-    }
-    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
-    .btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 12px 28px; font-size: 15px; font-weight: 500;
-      font-family: inherit; border-radius: 8px; cursor: pointer;
-      text-decoration: none; transition: all 0.2s; border: none;
-    }
-    .btn-primary {
-      background: var(--blue); color: #fff;
-      box-shadow: 0 4px 14px rgba(37,99,235,0.4);
-    }
-    .btn-primary:hover { background: var(--blue-dark); transform: translateY(-1px); }
-    .btn-outline {
-      background: transparent; color: #fff;
-      border: 1px solid rgba(255,255,255,0.2);
-    }
-    .btn-outline:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.4); }
-
-    .hero-visual {
-      display: flex; justify-content: center; align-items: center;
-    }
-    .molecule {
-      position: relative; width: 280px; height: 280px;
-    }
-    .mol-ring {
-      position: absolute;
-      border-radius: 50%; border: 2px solid rgba(96,165,250,0.3);
-    }
-    .mol-ring:nth-child(1) { width: 100%; height: 100%; top: 0; left: 0; }
-    .mol-ring:nth-child(2) { width: 70%; height: 70%; top: 15%; left: 15%; border-color: rgba(167,139,250,0.3); }
-    .mol-ring:nth-child(3) { width: 40%; height: 40%; top: 30%; left: 30%; border-color: rgba(45,212,191,0.3); }
-    .mol-dot {
-      position: absolute; width: 12px; height: 12px;
-      border-radius: 50%; background: #60a5fa;
-      box-shadow: 0 0 20px rgba(96,165,250,0.5);
-    }
-    .mol-dot:nth-child(4) { top: -6px; left: 50%; margin-left: -6px; background: #a78bfa; }
-    .mol-dot:nth-child(5) { bottom: -6px; left: 50%; margin-left: -6px; }
-    .mol-dot:nth-child(6) { right: -6px; top: 50%; margin-top: -6px; background: #2dd4bf; }
-    .mol-dot:nth-child(7) { left: -6px; top: 50%; margin-top: -6px; }
-    .mol-line {
-      position: absolute; height: 2px;
-      background: linear-gradient(90deg, rgba(96,165,250,0.2), rgba(167,139,250,0.2));
-      transform-origin: left center;
-    }
-
-    /* ========== STATS ========== */
-    .stats-bar {
-      position: relative; z-index: 2; margin-top: -40px;
-      max-width: 900px; margin-left: auto; margin-right: auto;
-      padding: 0 24px 0;
-    }
-    .stats-inner {
-      background: #fff; border-radius: 16px; padding: 32px 40px;
-      display: flex; justify-content: space-around; align-items: center;
-      box-shadow: var(--shadow-lg); border: 1px solid var(--border);
-    }
-    .stat-item { text-align: center; }
-    .stat-icon { font-size: 28px; margin-bottom: 8px; }
-    .stat-num { font-size: 32px; font-weight: 600; color: var(--navy); letter-spacing: -0.5px; }
-    .stat-label { font-size: 13px; color: var(--slate); font-weight: 400; margin-top: 4px; }
-    .stat-divider { width: 1px; height: 50px; background: var(--border); }
-
-    /* ========== SECTIONS ========== */
-    section { max-width: 1200px; margin: 0 auto; padding: 80px 24px; }
-    .section-label {
-      display: inline-block; font-size: 12px; font-weight: 600;
-      text-transform: uppercase; letter-spacing: 1.5px;
-      color: var(--blue); margin-bottom: 12px;
-    }
-    .section-header { text-align: center; margin-bottom: 56px; }
-    .section-header h2 {
-      font-size: 36px; font-weight: 300; color: var(--navy);
-      letter-spacing: -0.5px; margin-bottom: 12px;
-    }
-    .section-header p {
-      font-size: 17px; color: var(--slate); font-weight: 300;
-      max-width: 560px; margin: 0 auto;
-    }
-
-    /* ========== PRODUCTS ========== */
-    .products-section { background: var(--bg-light); max-width: 100%; padding: 80px 24px; }
-    .products-inner { max-width: 1200px; margin: 0 auto; }
-
-    .product-category { margin-bottom: 56px; }
-    .product-category:last-child { margin-bottom: 0; }
-    .cat-header {
-      display: flex; align-items: center; gap: 16px; margin-bottom: 24px;
-    }
-    .cat-icon-box {
-      width: 52px; height: 52px; border-radius: 14px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 24px; flex-shrink: 0;
-    }
-    .cat-icon-box.c1 { background: linear-gradient(135deg, #dbeafe, #bfdbfe); color: var(--blue); }
-    .cat-icon-box.c2 { background: linear-gradient(135deg, #ccfbf1, #99f6e4); color: var(--teal); }
-    .cat-icon-box.c3 { background: linear-gradient(135deg, #fef3c7, #fde68a); color: var(--amber); }
-    .cat-title { font-size: 22px; font-weight: 500; color: var(--navy); }
-    .cat-desc { font-size: 14px; color: var(--slate); font-weight: 300; }
-
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 18px;
-    }
-    .product-card {
-      background: #fff; border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 24px;
-      transition: all 0.25s; position: relative; overflow: hidden;
-    }
-    .product-card::before {
-      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
-      transition: opacity 0.25s; opacity: 0;
-    }
-    .product-card:hover {
-      border-color: #cbd5e1;
-      box-shadow: var(--shadow-lg);
-      transform: translateY(-2px);
-    }
-    .product-card:hover::before { opacity: 1; }
-    .c1 .product-card::before { background: var(--blue); }
-    .c2 .product-card::before { background: var(--teal); }
-    .c3 .product-card::before { background: var(--amber); }
-
-    .product-card .prod-icon {
-      width: 42px; height: 42px; border-radius: 10px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 20px; margin-bottom: 14px;
-    }
-    .c1 .prod-icon { background: #eff6ff; }
-    .c2 .prod-icon { background: #f0fdfa; }
-    .c3 .prod-icon { background: #fffbeb; }
-
-    .product-card h4 {
-      font-size: 18px; font-weight: 600; color: var(--navy);
-      letter-spacing: -0.2px; margin-bottom: 4px;
-    }
-    .product-card .alias {
-      font-size: 13px; font-weight: 500; margin-bottom: 8px;
-    }
-    .c1 .alias { color: var(--blue); }
-    .c2 .alias { color: var(--teal); }
-    .c3 .alias { color: var(--amber); }
-    .product-card .desc {
-      font-size: 14px; color: var(--slate); font-weight: 300; line-height: 1.5;
-    }
-    .product-card .tags {
-      display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px;
-    }
-    .tag {
-      font-size: 11px; font-weight: 500; padding: 3px 10px;
-      border-radius: 6px; background: #f1f5f9; color: var(--slate);
-    }
-
-    /* ========== WHY US ========== */
-    .why-us { padding: 80px 24px; }
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 20px;
-    }
-    .why-card {
-      padding: 32px 28px; border: 1px solid var(--border);
-      border-radius: var(--radius); text-align: center;
-      transition: all 0.25s;
-    }
-    .why-card:hover {
-      box-shadow: var(--shadow-lg); transform: translateY(-2px);
-    }
-    .why-icon {
-      width: 56px; height: 56px; border-radius: 16px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 26px; margin: 0 auto 16px;
-    }
-    .why-card:nth-child(1) .why-icon { background: linear-gradient(135deg, #dbeafe, #bfdbfe); }
-    .why-card:nth-child(2) .why-icon { background: linear-gradient(135deg, #ccfbf1, #99f6e4); }
-    .why-card:nth-child(3) .why-icon { background: linear-gradient(135deg, #fef3c7, #fde68a); }
-    .why-card:nth-child(4) .why-icon { background: linear-gradient(135deg, #e0e7ff, #c7d2fe); }
-    .why-card h3 {
-      font-size: 18px; font-weight: 600; color: var(--navy); margin-bottom: 8px;
-    }
-    .why-card p {
-      font-size: 14px; font-weight: 300; color: var(--slate); line-height: 1.6;
-    }
-
-    /* ========== INDUSTRIES ========== */
-    .industries { background: var(--bg-light); max-width: 100%; padding: 80px 24px; }
-    .industries-inner { max-width: 1200px; margin: 0 auto; }
-    .ind-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 16px;
-    }
-    .ind-card {
-      background: #fff; border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 28px 20px;
-      text-align: center; transition: all 0.25s;
-    }
-    .ind-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
-    .ind-icon { font-size: 36px; margin-bottom: 12px; }
-    .ind-card h4 { font-size: 15px; font-weight: 600; color: var(--navy); }
-
-    /* ========== CTA BANNER ========== */
-    .cta-banner {
-      max-width: 1200px; margin: 0 auto; padding: 0 24px 80px;
-    }
-    .cta-inner {
-      background: linear-gradient(135deg, var(--blue), #7c3aed);
-      border-radius: 20px; padding: 56px 48px;
-      text-align: center; position: relative; overflow: hidden;
-    }
-    .cta-inner::before {
-      content: ''; position: absolute; inset: 0;
-      background-image:
-        radial-gradient(circle at 20% 80%, rgba(255,255,255,0.08) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(255,255,255,0.05) 0%, transparent 50%);
-    }
-    .cta-inner > * { position: relative; }
-    .cta-inner h2 {
-      font-size: 32px; font-weight: 300; color: #fff;
-      letter-spacing: -0.5px; margin-bottom: 12px;
-    }
-    .cta-inner p {
-      font-size: 17px; font-weight: 300; color: rgba(255,255,255,0.7);
-      max-width: 500px; margin: 0 auto 28px;
-    }
-    .btn-white {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: #fff; color: var(--blue); padding: 14px 32px;
-      border-radius: 10px; font-size: 16px; font-weight: 600;
-      text-decoration: none; transition: all 0.2s;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.15);
-    }
-    .btn-white:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,0,0,0.25); }
-
-    /* ========== CONTACT ========== */
-    .contact-section {
-      background: var(--navy); max-width: 100%; padding: 80px 24px;
-    }
-    .contact-inner {
-      max-width: 1200px; margin: 0 auto;
-      display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start;
-    }
-    .contact-text h2 {
-      font-size: 34px; font-weight: 300; color: #fff;
-      letter-spacing: -0.6px; margin-bottom: 14px;
-    }
-    .contact-text > p {
-      font-size: 16px; font-weight: 300; color: rgba(255,255,255,0.55);
-      line-height: 1.6; margin-bottom: 28px;
-    }
-    .contact-info-list { list-style: none; }
-    .contact-info-list li {
-      display: flex; align-items: center; gap: 12px;
-      padding: 12px 16px; margin-bottom: 8px;
-      background: rgba(255,255,255,0.04); border-radius: 10px;
-      color: rgba(255,255,255,0.7); font-size: 14px;
-      border: 1px solid rgba(255,255,255,0.05);
-    }
-    .contact-info-list .ci-icon {
-      width: 36px; height: 36px; border-radius: 10px;
-      background: rgba(255,255,255,0.06);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 16px; flex-shrink: 0;
-    }
-    .contact-form-box {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 16px; padding: 36px;
-    }
-    .contact-form-box h3 {
-      font-size: 20px; font-weight: 500; color: #fff; margin-bottom: 20px;
-    }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
-    .form-group label {
-      display: block; font-size: 12px; font-weight: 500;
-      color: rgba(255,255,255,0.4); margin-bottom: 6px;
-      text-transform: uppercase; letter-spacing: 0.5px;
-    }
-    .form-group input, .form-group textarea, .form-group select {
-      width: 100%; padding: 11px 14px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 8px; color: #fff;
-      font-family: inherit; font-size: 14px;
-      transition: all 0.2s;
-    }
-    .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
-      outline: none; border-color: var(--blue); background: rgba(255,255,255,0.08);
-    }
-    .form-group textarea { min-height: 100px; resize: vertical; }
-    .form-group select option { background: var(--navy); color: #fff; }
-    .btn-submit {
-      width: 100%; padding: 14px; background: var(--blue); color: #fff;
-      border: none; border-radius: 10px; font-size: 15px; font-weight: 600;
-      font-family: inherit; cursor: pointer; margin-top: 20px;
-      transition: all 0.2s;
-    }
-    .btn-submit:hover { background: var(--blue-dark); }
-
-    /* ========== FOOTER ========== */
-    footer {
-      background: #020617; padding: 40px 24px; text-align: center;
-      font-size: 13px; color: rgba(255,255,255,0.3); font-weight: 300;
-    }
-
-    /* ========== RESPONSIVE ========== */
-    @media (max-width: 768px) {
-      .hero-content { grid-template-columns: 1fr; text-align: center; padding: 64px 24px 48px; }
-      .hero h1 { font-size: 32px; }
-      .hero p { margin: 0 auto 28px; }
-      .hero-btns { justify-content: center; }
-      .hero-visual { display: none; }
-      .stats-inner { flex-wrap: wrap; gap: 20px; padding: 24px; }
-      .stat-divider { display: none; }
-      .contact-inner { grid-template-columns: 1fr; gap: 36px; }
-      .form-row { grid-template-columns: 1fr; }
-      .section-header h2 { font-size: 28px; }
-      .cta-inner { padding: 36px 24px; }
-      .cta-inner h2 { font-size: 24px; }
-    }
-  </style>
-</head>
-<body>
-
-<!-- ===== NAV ===== -->
-<nav>
-  <div class="nav-inner">
-    <a href="#" class="nav-logo">
-      <div class="nav-logo-img">P</div>
-      Polarstar Chemical
-    </a>
-    <ul class="nav-links">
-      <li><a href="#products">Products</a></li>
-      <li><a href="#industries">Industries</a></li>
-      <li><a href="#why">Why Us</a></li>
-      <li><a href="#contact" class="nav-cta">Get Quote</a></li>
-    </ul>
-  </div>
-</nav>
-
-<!-- ===== HERO ===== -->
-<header class="hero">
-  <div class="hero-particles"></div>
-  <div class="hero-grid"></div>
-  <div class="hero-content">
-    <div>
-      <div class="hero-badge"><span class="dot"></span> China-Based · Global Supply Partner</div>
-      <h1>Premium <span>Coalescing Agents</span> & Industrial Solvents</h1>
-      <p>
-        Trusted chemical supply partner for paints, coatings, inks, and industrial sectors worldwide.
-        Quality products, competitive pricing, dedicated service.
-      </p>
-      <div class="hero-btns">
-        <a href="#products" class="btn btn-primary">Explore Products →</a>
-        <a href="#contact" class="btn btn-outline">Request Quote</a>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="molecule">
-        <div class="mol-ring"></div>
-        <div class="mol-ring"></div>
-        <div class="mol-ring"></div>
-        <div class="mol-dot"></div>
-        <div class="mol-dot"></div>
-        <div class="mol-dot"></div>
-        <div class="mol-dot"></div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- ===== STATS ===== -->
-<div class="stats-bar">
-  <div class="stats-inner">
-    <div class="stat-item">
-      <div class="stat-icon">🧪</div>
-      <div class="stat-num">10+</div>
-      <div class="stat-label">Core Products</div>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat-item">
-      <div class="stat-icon">📦</div>
-      <div class="stat-num">4</div>
-      <div class="stat-label">Categories</div>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat-item">
-      <div class="stat-icon">🌍</div>
-      <div class="stat-num">Global</div>
-      <div class="stat-label">Supply Network</div>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat-item">
-      <div class="stat-icon">🤝</div>
-      <div class="stat-num">24/7</div>
-      <div class="stat-label">Response</div>
-    </div>
-  </div>
-</div>
-
-<!-- ===== PRODUCTS ===== -->
+      height: 40px; width: auto;
+      object-fit: contain;
+    }
+    63|    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+    64|    .nav-links a {
+    65|      text-decoration: none; font-size: 14px; font-weight: 500;
+    66|      color: var(--slate); transition: color 0.15s;
+    67|    }
+    68|    .nav-links a:hover { color: var(--blue); }
+    69|    .nav-cta {
+    70|      background: var(--blue); color: #fff !important;
+    71|      padding: 8px 20px; border-radius: 8px; font-weight: 500;
+    72|    }
+    73|    .nav-cta:hover { background: var(--blue-dark); }
+    74|
+    75|    /* ========== HERO ========== */
+    76|    .hero {
+    77|      position: relative;
+    78|      background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 40%, #1a3a5c 60%, #0f172a 100%);
+    79|      overflow: hidden;
+    80|    }
+    81|    .hero-particles {
+    82|      position: absolute; inset: 0;
+    83|      background-image:
+    84|        radial-gradient(circle at 20% 50%, rgba(37,99,235,0.15) 0%, transparent 50%),
+    85|        radial-gradient(circle at 80% 30%, rgba(124,58,237,0.1) 0%, transparent 40%),
+    86|        radial-gradient(circle at 50% 80%, rgba(13,148,136,0.08) 0%, transparent 40%);
+    87|    }
+    88|    .hero-grid {
+    89|      position: absolute; inset: 0; opacity: 0.03;
+    90|      background-image:
+    91|        linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px),
+    92|        linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px);
+    93|      background-size: 60px 60px;
+    94|    }
+    95|    .hero-content {
+    96|      position: relative;
+    97|      max-width: 1200px; margin: 0 auto; padding: 100px 24px 80px;
+    98|      display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+    99|    }
+   100|    .hero-badge {
+   101|      display: inline-flex; align-items: center; gap: 6px;
+   102|      background: rgba(37,99,235,0.15); color: #93c5fd;
+   103|      font-size: 13px; font-weight: 500; padding: 5px 16px;
+   104|      border-radius: 20px; margin-bottom: 24px;
+   105|      border: 1px solid rgba(37,99,235,0.2);
+   106|    }
+   107|    .hero-badge .dot { width: 6px; height: 6px; background: #60a5fa; border-radius: 50%; }
+   108|    .hero h1 {
+   109|      font-size: 48px; font-weight: 300; color: #fff;
+   110|      line-height: 1.15; letter-spacing: -0.8px; margin-bottom: 20px;
+   111|    }
+   112|    .hero h1 span {
+   113|      background: linear-gradient(135deg, #60a5fa, #a78bfa);
+   114|      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+   115|      background-clip: text; font-weight: 400;
+   116|    }
+   117|    .hero p {
+   118|      font-size: 18px; font-weight: 300; color: rgba(255,255,255,0.6);
+   119|      line-height: 1.6; margin-bottom: 36px; max-width: 480px;
+   120|    }
+   121|    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+   122|    .btn {
+   123|      display: inline-flex; align-items: center; gap: 8px;
+   124|      padding: 12px 28px; font-size: 15px; font-weight: 500;
+   125|      font-family: inherit; border-radius: 8px; cursor: pointer;
+   126|      text-decoration: none; transition: all 0.2s; border: none;
+   127|    }
+   128|    .btn-primary {
+   129|      background: var(--blue); color: #fff;
+   130|      box-shadow: 0 4px 14px rgba(37,99,235,0.4);
+   131|    }
+   132|    .btn-primary:hover { background: var(--blue-dark); transform: translateY(-1px); }
+   133|    .btn-outline {
+   134|      background: transparent; color: #fff;
+   135|      border: 1px solid rgba(255,255,255,0.2);
+   136|    }
+   137|    .btn-outline:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.4); }
+   138|
+   139|    .hero-visual {
+   140|      display: flex; justify-content: center; align-items: center;
+   141|    }
+   142|    .molecule {
+   143|      position: relative; width: 280px; height: 280px;
+   144|    }
+   145|    .mol-ring {
+   146|      position: absolute;
+   147|      border-radius: 50%; border: 2px solid rgba(96,165,250,0.3);
+   148|    }
+   149|    .mol-ring:nth-child(1) { width: 100%; height: 100%; top: 0; left: 0; }
+   150|    .mol-ring:nth-child(2) { width: 70%; height: 70%; top: 15%; left: 15%; border-color: rgba(167,139,250,0.3); }
+   151|    .mol-ring:nth-child(3) { width: 40%; height: 40%; top: 30%; left: 30%; border-color: rgba(45,212,191,0.3); }
+   152|    .mol-dot {
+   153|      position: absolute; width: 12px; height: 12px;
+   154|      border-radius: 50%; background: #60a5fa;
+   155|      box-shadow: 0 0 20px rgba(96,165,250,0.5);
+   156|    }
+   157|    .mol-dot:nth-child(4) { top: -6px; left: 50%; margin-left: -6px; background: #a78bfa; }
+   158|    .mol-dot:nth-child(5) { bottom: -6px; left: 50%; margin-left: -6px; }
+   159|    .mol-dot:nth-child(6) { right: -6px; top: 50%; margin-top: -6px; background: #2dd4bf; }
+   160|    .mol-dot:nth-child(7) { left: -6px; top: 50%; margin-top: -6px; }
+   161|    .mol-line {
+   162|      position: absolute; height: 2px;
+   163|      background: linear-gradient(90deg, rgba(96,165,250,0.2), rgba(167,139,250,0.2));
+   164|      transform-origin: left center;
+   165|    }
+   166|
+   167|    /* ========== STATS ========== */
+   168|    .stats-bar {
+   169|      position: relative; z-index: 2; margin-top: -40px;
+   170|      max-width: 900px; margin-left: auto; margin-right: auto;
+   171|      padding: 0 24px 0;
+   172|    }
+   173|    .stats-inner {
+   174|      background: #fff; border-radius: 16px; padding: 32px 40px;
+   175|      display: flex; justify-content: space-around; align-items: center;
+   176|      box-shadow: var(--shadow-lg); border: 1px solid var(--border);
+   177|    }
+   178|    .stat-item { text-align: center; }
+   179|    .stat-icon { font-size: 28px; margin-bottom: 8px; }
+   180|    .stat-num { font-size: 32px; font-weight: 600; color: var(--navy); letter-spacing: -0.5px; }
+   181|    .stat-label { font-size: 13px; color: var(--slate); font-weight: 400; margin-top: 4px; }
+   182|    .stat-divider { width: 1px; height: 50px; background: var(--border); }
+   183|
+   184|    /* ========== SECTIONS ========== */
+   185|    section { max-width: 1200px; margin: 0 auto; padding: 80px 24px; }
+   186|    .section-label {
+   187|      display: inline-block; font-size: 12px; font-weight: 600;
+   188|      text-transform: uppercase; letter-spacing: 1.5px;
+   189|      color: var(--blue); margin-bottom: 12px;
+   190|    }
+   191|    .section-header { text-align: center; margin-bottom: 56px; }
+   192|    .section-header h2 {
+   193|      font-size: 36px; font-weight: 300; color: var(--navy);
+   194|      letter-spacing: -0.5px; margin-bottom: 12px;
+   195|    }
+   196|    .section-header p {
+   197|      font-size: 17px; color: var(--slate); font-weight: 300;
+   198|      max-width: 560px; margin: 0 auto;
+   199|    }
+   200|
+   201|    /* ========== PRODUCTS ========== */
+   202|    .products-section { background: var(--bg-light); max-width: 100%; padding: 80px 24px; }
+   203|    .products-inner { max-width: 1200px; margin: 0 auto; }
+   204|
+   205|    .product-category { margin-bottom: 56px; }
+   206|    .product-category:last-child { margin-bottom: 0; }
+   207|    .cat-header {
+   208|      display: flex; align-items: center; gap: 16px; margin-bottom: 24px;
+   209|    }
+   210|    .cat-icon-box {
+   211|      width: 52px; height: 52px; border-radius: 14px;
+   212|      display: flex; align-items: center; justify-content: center;
+   213|      font-size: 24px; flex-shrink: 0;
+   214|    }
+   215|    .cat-icon-box.c1 { background: linear-gradient(135deg, #dbeafe, #bfdbfe); color: var(--blue); }
+   216|    .cat-icon-box.c2 { background: linear-gradient(135deg, #ccfbf1, #99f6e4); color: var(--teal); }
+   217|    .cat-icon-box.c3 { background: linear-gradient(135deg, #fef3c7, #fde68a); color: var(--amber); }
+   218|    .cat-title { font-size: 22px; font-weight: 500; color: var(--navy); }
+   219|    .cat-desc { font-size: 14px; color: var(--slate); font-weight: 300; }
+   220|
+   221|    .product-grid {
+   222|      display: grid;
+   223|      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+   224|      gap: 18px;
+   225|    }
+   226|    .product-card {
+   227|      background: #fff; border: 1px solid var(--border);
+   228|      border-radius: var(--radius); padding: 24px;
+   229|      transition: all 0.25s; position: relative; overflow: hidden;
+   230|    }
+   231|    .product-card::before {
+   232|      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+   233|      transition: opacity 0.25s; opacity: 0;
+   234|    }
+   235|    .product-card:hover {
+   236|      border-color: #cbd5e1;
+   237|      box-shadow: var(--shadow-lg);
+   238|      transform: translateY(-2px);
+   239|    }
+   240|    .product-card:hover::before { opacity: 1; }
+   241|    .c1 .product-card::before { background: var(--blue); }
+   242|    .c2 .product-card::before { background: var(--teal); }
+   243|    .c3 .product-card::before { background: var(--amber); }
+   244|
+   245|    .product-card .prod-icon {
+   246|      width: 42px; height: 42px; border-radius: 10px;
+   247|      display: flex; align-items: center; justify-content: center;
+   248|      font-size: 20px; margin-bottom: 14px;
+   249|    }
+   250|    .c1 .prod-icon { background: #eff6ff; }
+   251|    .c2 .prod-icon { background: #f0fdfa; }
+   252|    .c3 .prod-icon { background: #fffbeb; }
+   253|
+   254|    .product-card h4 {
+   255|      font-size: 18px; font-weight: 600; color: var(--navy);
+   256|      letter-spacing: -0.2px; margin-bottom: 4px;
+   257|    }
+   258|    .product-card .alias {
+   259|      font-size: 13px; font-weight: 500; margin-bottom: 8px;
+   260|    }
+   261|    .c1 .alias { color: var(--blue); }
+   262|    .c2 .alias { color: var(--teal); }
+   263|    .c3 .alias { color: var(--amber); }
+   264|    .product-card .desc {
+   265|      font-size: 14px; color: var(--slate); font-weight: 300; line-height: 1.5;
+   266|    }
+   267|    .product-card .tags {
+   268|      display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px;
+   269|    }
+   270|    .tag {
+   271|      font-size: 11px; font-weight: 500; padding: 3px 10px;
+   272|      border-radius: 6px; background: #f1f5f9; color: var(--slate);
+   273|    }
+   274|
+   275|    /* ========== WHY US ========== */
+   276|    .why-us { padding: 80px 24px; }
+   277|    .why-grid {
+   278|      display: grid;
+   279|      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+   280|      gap: 20px;
+   281|    }
+   282|    .why-card {
+   283|      padding: 32px 28px; border: 1px solid var(--border);
+   284|      border-radius: var(--radius); text-align: center;
+   285|      transition: all 0.25s;
+   286|    }
+   287|    .why-card:hover {
+   288|      box-shadow: var(--shadow-lg); transform: translateY(-2px);
+   289|    }
+   290|    .why-icon {
+   291|      width: 56px; height: 56px; border-radius: 16px;
+   292|      display: flex; align-items: center; justify-content: center;
+   293|      font-size: 26px; margin: 0 auto 16px;
+   294|    }
+   295|    .why-card:nth-child(1) .why-icon { background: linear-gradient(135deg, #dbeafe, #bfdbfe); }
+   296|    .why-card:nth-child(2) .why-icon { background: linear-gradient(135deg, #ccfbf1, #99f6e4); }
+   297|    .why-card:nth-child(3) .why-icon { background: linear-gradient(135deg, #fef3c7, #fde68a); }
+   298|    .why-card:nth-child(4) .why-icon { background: linear-gradient(135deg, #e0e7ff, #c7d2fe); }
+   299|    .why-card h3 {
+   300|      font-size: 18px; font-weight: 600; color: var(--navy); margin-bottom: 8px;
+   301|    }
+   302|    .why-card p {
+   303|      font-size: 14px; font-weight: 300; color: var(--slate); line-height: 1.6;
+   304|    }
+   305|
+   306|    /* ========== INDUSTRIES ========== */
+   307|    .industries { background: var(--bg-light); max-width: 100%; padding: 80px 24px; }
+   308|    .industries-inner { max-width: 1200px; margin: 0 auto; }
+   309|    .ind-grid {
+   310|      display: grid;
+   311|      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+   312|      gap: 16px;
+   313|    }
+   314|    .ind-card {
+   315|      background: #fff; border: 1px solid var(--border);
+   316|      border-radius: var(--radius); padding: 28px 20px;
+   317|      text-align: center; transition: all 0.25s;
+   318|    }
+   319|    .ind-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+   320|    .ind-icon { font-size: 36px; margin-bottom: 12px; }
+   321|    .ind-card h4 { font-size: 15px; font-weight: 600; color: var(--navy); }
+   322|
+   323|    /* ========== CTA BANNER ========== */
+   324|    .cta-banner {
+   325|      max-width: 1200px; margin: 0 auto; padding: 0 24px 80px;
+   326|    }
+   327|    .cta-inner {
+   328|      background: linear-gradient(135deg, var(--blue), #7c3aed);
+   329|      border-radius: 20px; padding: 56px 48px;
+   330|      text-align: center; position: relative; overflow: hidden;
+   331|    }
+   332|    .cta-inner::before {
+   333|      content: ''; position: absolute; inset: 0;
+   334|      background-image:
+   335|        radial-gradient(circle at 20% 80%, rgba(255,255,255,0.08) 0%, transparent 50%),
+   336|        radial-gradient(circle at 80% 20%, rgba(255,255,255,0.05) 0%, transparent 50%);
+   337|    }
+   338|    .cta-inner > * { position: relative; }
+   339|    .cta-inner h2 {
+   340|      font-size: 32px; font-weight: 300; color: #fff;
+   341|      letter-spacing: -0.5px; margin-bottom: 12px;
+   342|    }
+   343|    .cta-inner p {
+   344|      font-size: 17px; font-weight: 300; color: rgba(255,255,255,0.7);
+   345|      max-width: 500px; margin: 0 auto 28px;
+   346|    }
+   347|    .btn-white {
+   348|      display: inline-flex; align-items: center; gap: 8px;
+   349|      background: #fff; color: var(--blue); padding: 14px 32px;
+   350|      border-radius: 10px; font-size: 16px; font-weight: 600;
+   351|      text-decoration: none; transition: all 0.2s;
+   352|      box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+   353|    }
+   354|    .btn-white:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,0,0,0.25); }
+   355|
+   356|    /* ========== CONTACT ========== */
+   357|    .contact-section {
+   358|      background: var(--navy); max-width: 100%; padding: 80px 24px;
+   359|    }
+   360|    .contact-inner {
+   361|      max-width: 1200px; margin: 0 auto;
+   362|      display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start;
+   363|    }
+   364|    .contact-text h2 {
+   365|      font-size: 34px; font-weight: 300; color: #fff;
+   366|      letter-spacing: -0.6px; margin-bottom: 14px;
+   367|    }
+   368|    .contact-text > p {
+   369|      font-size: 16px; font-weight: 300; color: rgba(255,255,255,0.55);
+   370|      line-height: 1.6; margin-bottom: 28px;
+   371|    }
+   372|    .contact-info-list { list-style: none; }
+   373|    .contact-info-list li {
+   374|      display: flex; align-items: center; gap: 12px;
+   375|      padding: 12px 16px; margin-bottom: 8px;
+   376|      background: rgba(255,255,255,0.04); border-radius: 10px;
+   377|      color: rgba(255,255,255,0.7); font-size: 14px;
+   378|      border: 1px solid rgba(255,255,255,0.05);
+   379|    }
+   380|    .contact-info-list .ci-icon {
+   381|      width: 36px; height: 36px; border-radius: 10px;
+   382|      background: rgba(255,255,255,0.06);
+   383|      display: flex; align-items: center; justify-content: center;
+   384|      font-size: 16px; flex-shrink: 0;
+   385|    }
+   386|    .contact-form-box {
+   387|      background: rgba(255,255,255,0.03);
+   388|      border: 1px solid rgba(255,255,255,0.08);
+   389|      border-radius: 16px; padding: 36px;
+   390|    }
+   391|    .contact-form-box h3 {
+   392|      font-size: 20px; font-weight: 500; color: #fff; margin-bottom: 20px;
+   393|    }
+   394|    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
+   395|    .form-group label {
+   396|      display: block; font-size: 12px; font-weight: 500;
+   397|      color: rgba(255,255,255,0.4); margin-bottom: 6px;
+   398|      text-transform: uppercase; letter-spacing: 0.5px;
+   399|    }
+   400|    .form-group input, .form-group textarea, .form-group select {
+   401|      width: 100%; padding: 11px 14px;
+   402|      background: rgba(255,255,255,0.05);
+   403|      border: 1px solid rgba(255,255,255,0.1);
+   404|      border-radius: 8px; color: #fff;
+   405|      font-family: inherit; font-size: 14px;
+   406|      transition: all 0.2s;
+   407|    }
+   408|    .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+   409|      outline: none; border-color: var(--blue); background: rgba(255,255,255,0.08);
+   410|    }
+   411|    .form-group textarea { min-height: 100px; resize: vertical; }
+   412|    .form-group select option { background: var(--navy); color: #fff; }
+   413|    .btn-submit {
+   414|      width: 100%; padding: 14px; background: var(--blue); color: #fff;
+   415|      border: none; border-radius: 10px; font-size: 15px; font-weight: 600;
+   416|      font-family: inherit; cursor: pointer; margin-top: 20px;
+   417|      transition: all 0.2s;
+   418|    }
+   419|    .btn-submit:hover { background: var(--blue-dark); }
+   420|
+   421|    /* ========== FOOTER ========== */
+   422|    footer {
+   423|      background: #020617; padding: 40px 24px; text-align: center;
+   424|      font-size: 13px; color: rgba(255,255,255,0.3); font-weight: 300;
+   425|    }
+   426|
+   427|    /* ========== RESPONSIVE ========== */
+   428|    @media (max-width: 768px) {
+   429|      .hero-content { grid-template-columns: 1fr; text-align: center; padding: 64px 24px 48px; }
+   430|      .hero h1 { font-size: 32px; }
+   431|      .hero p { margin: 0 auto 28px; }
+   432|      .hero-btns { justify-content: center; }
+   433|      .hero-visual { display: none; }
+   434|      .stats-inner { flex-wrap: wrap; gap: 20px; padding: 24px; }
+   435|      .stat-divider { display: none; }
+   436|      .contact-inner { grid-template-columns: 1fr; gap: 36px; }
+   437|      .form-row { grid-template-columns: 1fr; }
+   438|      .section-header h2 { font-size: 28px; }
+   439|      .cta-inner { padding: 36px 24px; }
+   440|      .cta-inner h2 { font-size: 24px; }
+   441|    }
+   442|  </style>
+   443|</head>
+   444|<body>
+   445|
+   446|<!-- ===== NAV ===== -->
+   447|<nav>
+   448|  <div class="nav-inner">
+   449|    <a href="#" class="nav-logo">
+   450|      <img class="nav-logo-img" src="data:image/jpeg;base64,/9j/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4pLSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk//2wBDAQ4ODhMREyYVFSZPNS01T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0//wAARCAH5BNgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD06iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKqzajaQ8NMpPovP8qpS67GP9VCze7HFaRpTlsjGeIpQ3ka9Fc9JrV033BGn0Gf51XfUbx+tww+nH8q1WFm9znlmFJbJs6miuRa5uG+9PKfq5pnmSHq7fnV/VH3M3mK6ROxorjvMk/vt+dOFxOv3ZpB9GNH1R9w/tFfynX0VyqaheJ0uH/E5/nU8es3i/eKP9V/wqHhZ9C45hTe6aOjorGi10dJYCPdT/AEq7DqlnLwJdh9HGP/rVnKjOO6OiGJpT2kXKKQEMMqQQe4payNwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiop7iK3TfM4UdvU00m9EJtJXZLUNxdQWy5mkC+g7n8KxrvWpZMrbDy1/vHqf8KzGZnYszFiepJzXVTwrestDgrY+MdKaua9xrhORbRY/2n/wrNnu7i4P72VmHpnA/KoKK6oUoQ2R51TEVKnxMKKKK0MQooooAKKUAscKCT6CrEdhdyfdt3/EY/nSckt2VGEpbK5WorRTRrxuoRfq3+FSDQrj+KWIfTP8AhUOtTXU1WGrP7LMqitf+wpf+e6fkaQ6FP2mjP1zS9vT7j+qVv5TJorSbRbtenlt9G/xqB9NvI+sDH/d5/lVKrB7Mh0Ksd4shhnmgOYpGT6GtG31uVcC4QOP7y8Gst0dDh1ZT6EYptEqcJ7oIVqlN+67HV219b3XEcg3f3W4NWa4zp0rQtNXngwsv71Pc8j8a5Z4VrWB6FLME9Ki+Z0dFV7W8gu1zE/PdTwRViuRpp2Z6MZKSumFFFFIYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFNkkSJC8jBVHUmuf1DVHuMxw5SL9WrSnSlUehhXxEKKu9y9f6ukOY7fDv3bsP8aw5ZZJpC8rlmPc1HRXo06UYLQ8atiJ1X723YKKKK0MAooqSKKSZwkSFmPYUN2Gk27Ijp8cbyttjRmb0AzWxaaIBhrts/7Cn+ZrWiijhTbEiovoBXNPFRWkdTupYCctZ6fmYVvotxJgzMsQ9OprRh0i0i5ZTIfVj/AEq/RXLKvOXU76eEpQ6X9RscccYxGioPRRinUUVidKVtgooooAKKKKACiiigBGVXGGUMPQjNVJtLs5f+WWw+qcf/AFquUVUZSjsyJU4z+JXMKfQ5FybeUOPRuDWbNbzQNiaNk+o4NdfSMqupV1DKeoIzW8MVJfFqclTAU5fDoccrMjBkYqw6EHpWzY6z0ju/wkH9alutGhky1ufLb06qf8Kxrm1mtW2zIR6Hsfxro5qdZW6nFy18K7rb8DrFYMoZSCD0I70tcvYahLZtj70R6of6V0dvcRXMQkibI/UVyVaMqb8j0qGJjWXZ9iWiiisTpCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKjnmjt4jJK2FH60s0qQRNJI2FXrXMX9695LuPCD7q+lbUaLqPyObE4lUV5i399JeSc/LGPur/jVSiivSjFRVkeHOcpvmluFFFFMkKKcis7BUBZjwAO9b2naSsOJbkBpOoXsv+JrOpVjTV2bUaE6ztEo2OkyXGJJsxx/qa3oLeK3j2QoFH6mpKK8+pVlU3Pao4eFJab9wooorI3CiiigAooooAKKKKACiiigAooooAKKKKACiiigAprokiFJFDKeoIp1FAbmJfaMVzJaZI7oev4Vm21zNZzbkJBHDKe/sa62qV/p0V2CwwkvZh3+tdVPEactTVHn1sHrz0tGTWd3Hdxb4zgj7ynqDU9cqpuNNu+m117dmH+FdHZ3Ud3CJI+D0Ze4NRWo8nvR2NcNifae7LSSJ6KKKwOsKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKRmCqWYgADJJ7UtYmtX24m1iPA++R39qunTc5WRlWqqlDmZU1O+N3LhSREp+UevvVGiivVjFRVkeBOcpycpbhRRRTICnxxvLIscalmY4AFIis7hUBLE4AHeul02wWzj3NgzMPmPp7CsqtVU15nRh8O60rdA07T0s03NhpiOW9PYVdoorzZScndnuQhGEeWOwUUUVJYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAQXdpFdxbJByPusOorAUz6Te/MMjv6OK6aoLy1ju4THJwf4W7g1tSq8vuy2OXEYfn9+GkkSQypPEssZyrDin1gWM8mm3htrniNj17D3HtW/U1afI9NjShW9pHXRrcKKKKzNgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKCQBknAFAFPU7v7JbEqf3j8J/jXMEkkknJNWdRujd3TOD8g4Qe1Va9OhT5I+Z4WKr+1npsgooorY5QoorR0ey+0TebIP3UZ/M+lTOSirsunTdSSii/o9h5KC4lH7xh8oP8IrUoorypzc5XZ9BSpxpxUYhRRRUmgUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBU1GyW8gwMCReVP9Kg0e6Z0NrNkSxcDPUj/wCtWlWXqkDQSrf24+ZD849RW1N8y9m/kc1WPJL2sfn6f8A1KKZDKs0KyocqwyKfWLVjoTTV0FFFFAwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigArN1u68m18pT88vH0HetKuW1K4+03ruDlR8q/QVvh4c079jkxtX2dOy3ZUooor0jwwooooAfFG00qxoMsxwK6y2gS2gSJOijr6n1rL0G1+9cuP9lP6mtmuDE1Ly5V0PYwNHlhzvd/kFFFFcp3hRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUjKGUqwyCMEUtFAGdYZtLuSyY/IfniJ9O4rRqnqMbGJbiMfvIDvHuO4q1G6yRq6nKsMitJ+9aRjSXI3Dtt6f8AdRRRWZsFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUjHapJ7DNZv9uWv9yb/vkf41UYSl8KM51YU/idjTorM/ty1/uTf98j/Gj+3LX+5N/3yP8AGr9jU7EfWqP8yNOisz+3LX+5N/3yP8aP7btf7kv/AHyP8aPY1OwfWaP8yNOiqUWq2chx5u0/7QxVxWVlDKQQehBzUSjKO6NI1Iz+F3FoooqSwooooAKKKKACiiigAooooAKKKq3l9FZbPNVzvzjaB2pqLk7ImUlBXk9C1RWZ/blr/cm/75H+NH9uWv8Acm/75H+NaexqdjL61R/mRp0UyKQSxJIucOARmn1lsbJ3V0FFFFAwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKZLLHCu6V1RfUnFUZdZtEOF3yf7o/xqowlLZGc6sIfE7GjRWQdej7QN/31SrrsP8UMg+hBq/YVOxn9bo/zGtRVKLVbOU48zYfRxirgIYAqQQehFRKMo7o1hUjP4XcWiiipLCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKguLy3tuJZVB/ujk/lVF9cgB+SKRvrgVcaU5bIynXpw0lI1aKyBr0feBv8Avqp4tYtJDhi0Z/2h/hVOjUXQmOKoy0UjQowPSkR1kUMjBlPQg5payN9wwPSjA9KbI4jjZznCgk4rO/ty1/uTf98j/GrjCUvhRnOrCHxOxp4HpRgelZn9uWv9yb/vkf41Zs9QhvGZYlcFRk7gKbpTSu0TGvSk7RlqWqKKKzNgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA69aq2I8oy2x/5ZNlf908j+oq1UMiEXUUqgnIKN9OoP5j9aqL0aIktVImoooqSwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAGyf6p/oa42uyk/1T/Q1xtduE2Z5eY7x+YUUUV2HmBRRRQAVPbXc1q+6FyB3U9DUFFJpNWY4ycXdHVWF9HeR5X5XX7y+lWq5G2ne2nWVDyOo9R6V1kbrLGsiHKsMivOr0vZu62PbwmI9rG0t0OooorA6wooooAKKKKACiiigArF8Rdbf/AIF/StqsXxF1t/8AgX9K2w/8RHLjf4L/AK6mLRRRXpnhHW2P/HjB/wBc1/lU9QWP/HjB/wBc1/lU9eRP4mfSU/gXogoooqSwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAqhqWoraDy48NMR07L9atXU4trZ5j/COB6ntXJyO0sjO5yzHJNdOHpKbu9jixmIdJcsd2LNNJO5eVyzHuajoor0ErHjNtu7CiiigQVYtbye1bMTnHdT0NV6ntLWS7mEcY+p7AVMrW97YuHNzLk3OjsL6O9jJUbXX7y+lWqhtbaO1hEcQ+p7k1NXlT5eZ8ux9DT5uVc+5S1a5ltbVZISAxcDkZ4wayP7YvP76/98itHX/+PFP+ug/ka56u3D04yhdo8vGVakatou2xof2xef31/wC+RW1ps8lxZLLKQWJPQY71ytdLov8AyDU+p/nSxMIxhdIrBVZzqWk76F+iiiuE9UKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAA8DJrD1HV2YmK0OF6GQdT9Kl1y8KKLaM4LDLn29Kwq7cPQTXNI8zGYpp+zh8xSSSSTknvSUUV2HlhRRRQBPa3U1q+6Jseqnoa6Wyulu7cSqpXsQfWsLTdOa7ffJlYQeT/AHvYV0iIsaBEUKoGABXDipQbstz1sBGoldv3SO6/49Zv9xv5VyFdfdf8es3+438q5CrwmzM8x+KIVr+Hv9fN/uj+dZFa/h7/AF83+6P51tX/AIbObCfxom7RRRXlnvBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABUFxcCGWBD/wAtH2/p/jip65/VrgyX2EPEXA+vesq1TkjcmTsjoKKjtpRPbpKP4hz9akrRO6uigooopgFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFADZP8AVP8AQ1xtdlJ/qn+hrja7cJszy8x3j8wq1pyLJfxJIoZSeQfpVWrmlf8AISh+p/ka6p/Czgpa1I+qOg+wWn/PvH+VNfTrN1wYFH04q1RXlc8u57/sofyr7jmNSsjZzAKSY35Un+VUq3PELr5cMf8AFkt+FYdelRk5QTZ4mJhGFVxjsFdJochfTwp/gYr/AF/rXN1v+Hwfskh7b/6CoxS/dmuAbVb5M1aOlFc9qmpNO5hhbEI4JH8X/wBauKnTdR2R6levGjG7NC51i3hJWPMrD+70/OqL65cE/JHGo98msqiu6OHprpc8ieMrSejt6GmNbugeViP4H/GrUGuIxAniK/7SnIrCopuhTfQUcXWi/iOxiljmQPE4ZT3FPrkrS6ltJQ8Z47r2NdRbTpcwLLGeD29D6VxVqLp+h6mGxKrK2zJaxfEXW3/4F/StqsXxF1t/+Bf0ow/8RBjf4L/rqYtFFFemeEdbY/8AHjB/1zX+VT1BY/8AHjB/1zX+VT15E/iZ9JT+BeiCori4htk3zOFHb1NSNu2nbjdjjPTNcpem4Ny/2rPmD1/p7VpRpe0erMcViHRjdLc05tdGcQQ5Hq5/pVc63dHosQ/4Cf8AGsyiu5UKa6HlSxdaX2jTGt3Q6rEf+An/ABqeLXecTQceqH+lYtFDoU30FHF1l9o622vILofuXyR1U8EVPXGo7RuHRirDkEV02mXv2yD5sCROGHr71x1qHJqtj0sNi/avlluXKrahctaWxlVQxyBg1ZrP1z/kHn/eFZU0nNJnRXk405Ndil/bsv8AzxT8zR/bsv8AzxT8zWRRXo+wp9jxvrdb+Y6aLUY/sKXFwQhbOFHJOD2qjNrrk4ghUD1c5/lWQSSACTx0pKmOGgndlzxtVpJOxpjW7sHlYj/wE/41bttbjdgtwnl5/iHIrBqe0tZLuYRxj6nsBTnRp21ViaeKr8ySdzrAQwBUgg8gilqK2gW2gWJCSF7nvUtea7X0PcV7ahRRRSGZWvuRaxoP4nyfwFYFbviEfuoW7BiKwq9LDfw0eHjn++fyCtnR9Pjlj+0TruBOFU9PrWNW1pGoRRwi3nbZgnax6U6/Nye6ThOT2vvmyqKowqgD0AprwxSDEkaMPdc0qSRyfcdW+hzTq83VHu2TRk3eio5DWp2c8qen4VoWltHawiOMfU9yamoqpVJSVmzOFCnCTlFahTZHWNGdzhVGSadVfUP+PCf/AHDUxV2kXN2i2ZusXlvcWipDKGYODjB6YNYtFFerTgoKyPn61V1ZczCt3S761gsUjllCsCcjB9awqKKlNVFZjo1nSlzROtgvba4fZDKGbGcYNT1z2g/8fzf9cz/MV0NedWgoSsj2cNVdWnzMbI6RoXkYKo6kmsufXIlJEEZk9ycCqetG5+04m/1X/LPHT/8AXWbXRSw8WuaWpx4jGzUnGCtY1G1y6P3UiA+h/wAaaNbu/SI/8BP+NZtFdHsafY4/rNb+ZmxHrsgP72BT/unFaFrqVtckKrFHP8LcZrl6Ws5YaD20NaeOqxeup2dFZOj6g0v+jznLgfIx7j0rWrhnBwlZnr0qsaseaIyZzHC8gGSqk4+grF/t2X/nin5mti6/49Jv+ubfyrkK6MNTjNPmRxY6tOnJKDsa/wDbsv8AzxT8zVyw1MXEcsk4SNY8c59c1zlLk4xnj0reWHg1ZKxyQxtWLu3c27jXFBIt4t3+03H6VW/tu7z92L/vk/41mUVSoU10Jli60nfmNqDXTkC4iGPVP8K14Zo54xJEwZT3FcjHG8sgSNSzMcACul02yFnCQWzI3Lelc2Ip04q63O3B1qtR2lqu5cooorkPRCiimyttidvRSaAbscpeyma8lkz1Y4+naoKKK9hKysfMybk22KASQByTXR2OlwwRqZUWSU9S3IH0rF05N+oQKf72fy5rqq5MVUatFHo4CjGV5yRE9tBIu14YyP8AdFZraIhugyviDqV7/SteiuWNSUdmehOhTqfEhERUQIgCqBgAdqWiioNSK6/49Zv9xv5VyFdfdf8AHrN/uN/KuQruwmzPKzH4ohWroTrHJO7sFUKMk/WsqlycYzwa6Zx548pw0qns5qXY27jXFUlbaPd/tNwPyqt/bd3nO2L6bT/jWZRUKhTS2NZYutJ35jct9cUkC4i2/wC0v+Fa0bpKgeNgynoRXG1oaTem3uBG5/dSHB9j61jVwyteB04fGy5lGpt3OkooorhPVCobi6htk3TOF9B3NRaherZw7uDI3Cr/AFrmpZZJpDJKxZj3NdFGg56vY48Ti1S92OrNabXTnEEPHq5/oKrnW7vPSL/vk/41m0V2KhTXQ8yWLrN/Ea8euzA/vYUYf7JIrRtNSt7ohVYo5/hbjP0rl6WplhoS20NKeNqxerujs6KyNJ1IyEW9w2W/gY9/Y1r1wTg4OzPXpVY1Y80QrFn1qWK4kjEKEI5XOT2NbVcle/8AH9cf9dG/nW2GhGbfMjmxtWdOKcXY0P7dl/54p+ZqxY6q9zciN40RcEk59KwKUEjocZrqeHg1ojz44yqmm3c37rWoYiVgUykd84FUm1u6J4WID6H/ABrMoojh6a6BPGVpPe3oa8OuyA/voVYeq8Gte1uobqPfC2cdQeorkakilkhfdE5RsYyKiphoyXu6M0pY6pF+/qjpLvUbe1O1jvf+6v8AWs2TXZyf3cUaj3yayiSTknJNJVQw0IrXUmpjasno7I0xrd0DysR/4Cf8at2+uRuQtxGU/wBocisGinKhTfQiOLrRe9zs0dXQMjBlPQjvS1zmk3xtphE5/dOcf7p9a6OuCrTdOVj18PXVaN1uFFFFZm4UUUEgAknAHU0AQXtwLa2aT+Loo9TXMEkkknJPWrepXn2qf5f9WnC+/vVOvNr1OeWmyMZO7NbRLnDNbuevK/XuK2a5JGZHDqcMpyDXS2N0t3AHHDjhh6Gt8NUuuRlwfQsUUUV1lhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA2T/VP9DXG12Un+qf6GuNrtwmzPLzHePzCprWb7PcJMF3bT0zioaK7GrqzPNTad0bP9vN/z7D/AL7/APrU19dkK/JAoPqWzWRRWPsKfY6Prlb+YkmmknlMkrbmNR0UVslbY5223dhXU6VCYLCMMMM3zH8axdKsTdTB3H7lDz7n0rpa4sVUT9xHp5fRavUfyKOsTmCxYKcNIdo/rXM1teIW5gT6n+VYtbYaNqd+5z46blVa7BU0FtNcsVhjLEdfQVDXVaZCIbCIAcsu4/U061X2cbojC0PbTs9kc/Np93AheSE7R1IIOPyqrXaEAjB5Brkr2IQXksY6K3H0qaFZ1LpmmLwqopOL0IK1dBnKXDQE/K4yPqP/AK1ZVWdObZqEB/2wPz4rWrHmg0YUJuFWLOrrF8Rdbf8A4F/StqsXxF1t/wDgX9K8/D/xEevjf4L/AK6mLRRRXpnhHW2P/HjB/wBc1/lU9QWP/HjB/wBc1/lU9eRP4mfSU/gXogqrf2KXkWD8sg+61WqKUZOLuhzgprllsci1tMtx5BjPmZxgd6vR6HcMuXeND6da3HaGNt8jIrYxliAcUz7Za/8APzD/AN9iup4mo17qOCOCpRb53+NjEn0a5jQshSQDsvWs6us+2Wv/AD8w/wDfYrmr7Yb2YxkFCxIIPFbUKk5NqSObF0KdNKUH+JXq/o0pj1BB2cFTVCrOn/8AH/B/vitaivBo5qLaqRa7nV1n65/yDz/vCtCs/XP+Qef94V5tL40e7iP4UvQ5uiiivVPnhyI8jhI1LMegAq02l3qpuMBx6Agn8q0tAhUQPNj5mbbn2Fa1clXEuMrJHpUMDGcFKT3OStrWW5n8qNee5P8AD9a6a0tY7SERxj6t3JqVURWZlUAtyxA606sKtZ1NOh14fCxo67sKKKKwOoKKKKAKWrwGewfaMsnzj8P/AK1cxXaVganpbxO01upaM8lR1X/61dmGqpe6zzcdQcv3kfmZVFFFdp5QtSpc3Ef3JpF+jGoaKTSe402tjQh1i7jPzssg9GH9RWvZalDd/KPkk/unv9K5ilBKsGUkEcgisZ4eElpodVLGVIPV3R2dQXqNJZzIgyzIQB61Fpd39rtst/rE4b396uV57ThKz6HsJxqwutmclNaXECB5omRScZNQV0Ov/wDHin/XQfyNc9XpUZucbs8PE0lSqcqCrEVnczIHihZlPcVXrpdF/wCQan1P86K1R043Q8NRVafKyno1pcQXjPLEyLsIyfqK26KK86pNzldntUaSpR5UR3EEdxCYpVyp/T3rmL2zktJtjDKn7rDvXV02TywAZNuAcgt2NXSrOm/IzxGGjWV9n3Oeg0a6lUM+2MHs3WpH0O4C5SSNj6citk3lqOtzD/32KT7Za/8APzD/AN9itPb1b7fgYrCYe1r/AInKyRvFIUkUqynBBplaOtvFJdq8Lq+U5KnPOazq7YS5ops8urBQm4p3JIJDDOkq9VYGuwByMiuLrsYeYYz/ALI/lXLi1sz0MufxIbdf8ek3/XNv5VyFdfdf8ek3/XNv5VyFPCbMnMfiiFL1OBSVp6FCsl2zsM+WuR9a6Zy5YuRw0qbqTUV1IE0u9dNwgIHuQDVfyJRMITG3mE4245rsKaUQuHKjeBgNjnFcaxcuqPSll0NLMqabp62ce5sNMw5Pp7CrtFFc0pOTuzuhCMI8sdgoooqSwqK6/wCPSb/cb+VS1Fdf8ek3/XNv5U47omfws5CiiivYPmi9o4zqcXtn+Rrpq5rRv+QlH9D/ACNdLXn4r4z2cv8A4T9QooormO4KKKKAIrr/AI9Zv9xv5VyFdfdf8es3+438q5Cu7CbM8rMfiiFKAScAZJpK09CiV7tnYZ8tcj610zlyxcjhpU/aTUV1IF0u9ZNwgOPQkA/lVV1ZGKupVh1BHSuyrG8QRLiKYDDElT71zUsQ5S5WjtxGCjThzRexiUtJRXWecddaSGa0ikPVlGfrU1VNJ/5BsP0P8zUl7J5VlM46hDj615Mo++0u59FCf7tSfb9DnNRuTc3jvn5Qdq/SqtFFerFKKsj5+cnKTk+pLBBJcSiOJdzH9K010GTb806hvQLmnaJJbwwSPLLGjs2MMwBwK0/tlr/z8w/99iuSrWqKVoo9HD4ai4KU3q/M5y8sZrMjzACp6MOlVa6a+ntJ7OWPz4idpI+cdR0rma2ozc4+8tTlxVKNOfuO6YoJVgynBByDXWWU/wBptI5e5HP171yVb3h+TMEsf91gfz//AFVGKjeF+xrgJtVOXua1cle/8f1x/wBdG/nXW1yV7/x/XH/XRv51lhPiZ0Zj8MfX9CCiirFhEJ72KNuVLcj1A5rtbsrnlxi5NJdR0Gn3U6b44SVPQkgZ/Oop7ea3bbNGUJ6Z7114GBgdKq6nCs1hKGHKqWB9CK444puVmtD0p4CKg2nqcrRRRXaeWKAScDk1bXS71k3CA49CQD+VWNBhWS6aRhny14+proK5a2IcJcqPQw2DjVhzyZxro0blHUqw6gim1u6/CphjmA+YNtJ9RWFW1KfPHmOWvS9lNxCus0+UzWMMhOSVwfqOK5Oul0X/AJBqfU/zrHFr3Ezpy92qNeRfoopGLBSVALdgTjNcB7AMQqlmIAHUmsPUtR8/MMBIj7n+9/8AWqPUbi7eTZcKY17IOn/16o1wVq7fuoylLoFFFFcpAVNbXEltMJIz9R2IqGimm07oDqLW6iuo90Z5HVT1FT1ycUkkUgaJirDoRXR2UlzJFm5iCHsc8n8O1ehRr8+jWprGVyzRRRXQWFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUANk/1T/Q1xtdlJ/qn+hrja7cJszy8x3j8wooq5pX/ISh+p/ka65OybPOhHmko9ynS12eB6UYFcn1vyPR/s3+9+ByMVtPKcRwu3uBxWlaaIxIa6bA/uKefzrcorOeKk9FobU8BTi7y1GxosaBI1CqOgFOoormO7YwvEH/AB8Rf7n9ayK1/EI/fQn1U/zrIr1KH8NHg4v+NIK7C34t4/8AcH8q4+uvtW3WkLDug/lWOL2R05d8UiWuY1j/AJCc34fyFdPXL6q27UpiPUD8gKzwnxs2zD+GvUp1NacXkP8A10X+dQ1PZDN7AP8Apov867pbM8mHxL1OtrF8Rdbf/gX9K2qxfEXW3/4F/SvNw/8AER7eN/gv+upi0UUV6Z4R1tj/AMeMH/XNf5VPUFj/AMeMH/XNf5VPXkT+Jn0lP4F6ICQASTgDqawL/V5JGMdqSiDjcOp/wq7rk5isxGpwZDg/TvXO11YakmuaR5+NxEov2cfmKxLEliST3NJRV620u5uYxIoVFPQucZrrlKMVdnnQhKbtFXKNFan9h3X/AD0h/M/4VnzwtBM0TkFlODjpSjUjLSLKnRqQV5KxHVnT/wDj/g/3xVarOn/8f8H++Kc/hZNP416o6us/XP8AkHn/AHhWhWfrn/IPP+8K8yl8aPexH8KXoc3RRRXqnzx0ehf8g/8A4Ga0aztC/wCQf/wM1o15Vb+Iz6HDfwY+gUUUVmbBRRRQAUUUUAFFFIzKv3iBk45NAFa40+1uCS8QDH+JeDVKTQoz/q52H+8ua16K0jVnHZmM8PSnrKJgPodwPuSxt9ciqdzY3NsN0sfy/wB4ciurpk6q8Dq/3SpBrWOKnfU5qmAptPl0Zx1FFFegeOaehSFb0p2dT+Y/ya6GuY0f/kJw/j/I109efil757WAd6VvMzNf/wCPFP8AroP5Guerodf/AOPFP+ug/ka56ujC/wAM4cf/ABvkgrpdF/5BqfU/zrmq6XRf+Qan1P8AOlivgKy/+K/Qv0UVBezfZ7SWUdVXj69q4EruyPYlJRTbKOp6qYWMFtguPvN/d/8Ar1hySSStukdmb1JzTSSSSTkmkr1KdKMFZHz9avOq7vYKKtWljPd5MSgKOCzHAq1/Yd1/z0h/M/4U5VYRdmwjQqzV4x0MuirF5aSWcipKyksMjaar1SaaujOUXF2e4V2MH+oj/wB0fyrjq7GD/UR/7o/lXJi9kehl28vkNuv+PSb/AK5t/KuQrr7r/j0m/wCubfyrkKeE2YZj8UQrY8Pf66b/AHRWPWx4e/103+6K2r/w2c2E/jRNyiiivLPeCiiigAooooAKjuRm1lH+wf5VJSOu5GX1GKa0YpK6aOMopSCCQeopK9g+ZLukHGpw/j/I109clZSCG8ikPADDP0rra4MWveTPXy5+415hRRRXKegFFFFAEV1/x6zf7jfyrkK6+6/49Zv9xv5VyFd2E2Z5WY/FEK1/D3+vm/3R/Ositfw9/r5v90fzrav/AA2c2E/jRN2srxB/x7Rf7/8AStWsrxB/x7Rf7/8ASuCh/ER62L/gyMCiiivUPAOo0n/kGw/Q/wAzSawcaZN+H8xS6T/yDYfof5ml1Vd2mzD2B/IivM/5e/P9T3v+Yf8A7d/Q5aiiivTPBCirtnps15EZInjABxhic/yqf+w7r/npD+Z/wrN1YJ2bNo4erJXUdDLorU/sO6/56Q/mf8KP7Duv+ekP5n/Cl7an3H9Vrfysy62fD335/ov9ai/sO6/56Q/mf8Kv6VYS2TSmVkO8DG0n/Cs61WEoNJnRhaFWNVOUdDRrkr3/AI/rj/ro38662uSvf+P64/66N/OssJ8TN8x+GPr+hBV3Sf8AkJw/U/yNUqu6T/yE4fqf5Guup8DPOo/xI+qOnqG7/wCPOf8A65t/Kpqhu/8Ajzn/AOubfyryo7o+gn8LORooor2D5o2fD3+sn+g/rW3WJ4e/1k/0H9a2683EfxGe7gv4K+Zm69/x4D/roP5Gudrote/48B/10H8jXO11YX+Gefj/AON8kFdLov8AyDU+p/nXNV0ui/8AINT6n+dLFfAPL/4vyL9FFFeeeyRzQxzxlJVDKf0rAv7F7R8jLRno39DXR02WNJY2jkGVYYIrGrRVReZMo3OSoqxeWzWs5jPK9VPqKr15rTTszEKfHG8sgSNSzNwBTa6DTLIW0W9x+9Yc+w9K0pUnUlYqKuLY6fHagM2Hl9fT6Vdoor0oxUVZGqVgoooqhhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFADZP9U/0NcbXZSf6p/oa42u3CbM8vMd4/MKuaV/yEofqf5GqdXNK/wCQlD9T/I101PgZwUf4kfVHUUUUV5J9GFFFFABRRRQBk+IIyYIpB/CxB/H/APVWDXX3UC3Nu8LdGHX0NcnLE8MrRyDDKcGvQws7x5ex4+PptT5+jGVtaXqcUUAguCV2/dbGRisWitqlNTVmctKtKlLmidLPq1rHGTG/mP2UA1zkjtJIzscsxJNNoqadKNPYqviJ1rcwVd0iMyajH6LljVKuh0W0MEJmkGHk6D0FFefLBlYWm6lVeWpp1i+Ih/x7n/e/pW1WfrUBmst6jLRnd+HeuCg7VE2etiouVGSRzdFFFeoeAdJp99bGyiVpkRkUKQxx0q5HPDKSIpUcjkhWBrj61vD/APx9Sf7n9RXFVw6Sckz1MPjJSlGm0S+IgcW57fN/SsSul1mAzWJZRlozu/DvXNVthnenY58dFqs33Cussp4p7ZDEw4UAr6VydKCR0qqtL2i3M8PiHRbdr3Ovnnit4y8rhQPzNcpcy+fcSS4xvYnFR9etJSpUVT1KxGKdaytZIKs6f/x/wf74qtVnT/8Aj/g/3xWk/hZhT+NeqOrrP1z/AJB5/wB4VoVn65/yDz/vCvMpfGj3sR/Cl6HN0UUV6p88dHoX/IP/AOBmtGs7Qv8AkH/8DNaNeVW/iM+hw38GPoFFFFZmwUUUUAFFFFADJpUgiaSVtqr1Nczf30l5LnlY1+6v9frT9Uupp7kpKpRUOAh/nVGvQoUVFcz3PGxeKdR8kdjRttXuIAFfEqj+91/Orya5bkfPFIp9sGsCirlQpy6GUMXWgrJnRHWrQDpIf+A//Xqle6w08bRQoUVuCSeSKyqKI4eEXcc8ZVmrXCiinIjSOEQFmY4AFbHKaWgxF7xpO0a/qf8AJroKq6faC0tgh5c8sferVeXWnzzuj38LSdOmk9zM14f6CvtIP5Guerq9RgNxZSRqMtjK/UVytdeFd4WPOzCLVW/dCVvaPeW6WYiklVGUn7xxmsGitqlNVFZnPRrOjLmR2EdxBK22KaN2xnCsDVXWQTpsmPUfzFZmg/8AH83/AFzP8xW5dRefbSRf3lIH1rglFUqiR60KjxFBu2ruchRSspVirDBBwRSV6R4Z0OiTxNZiEMBIhOR3PPWtJ3VFLOwVR1JOK42gknqc1yzwqlK9z0KePcIKPLsXNVulurvdHyijaD61SoorpjFRVkcU5ucnJ9QrsYP9RH/uj+VcdXYwf6iP/dH8q5MXsjvy7eXyG3X/AB6Tf9c2/lXIV191/wAek3/XNv5VyFPCbMMx+KIVseHv9dN/uisetjw9/rpv90VtX/hs5sJ/GiblFFFeWe8FFFFABRRRQAUUUUActqcBgv5BjhjuH0NVK6bVbL7XBuQfvU5X39q5ogqSGBBHBBr06FRTj5ng4qi6dR9mJWtY6wYoxFcIXC8Bl64rJoq5wjNWkZUqs6TvFnQvrdsF+RJGPpgCs1tVuTdCYHAHATtiqFFRGhCPQ1ni6s939x1tpdR3cIkjP1XuDU9cla3MlrMJIj9R2Irp7S5ju4BLH9CD2Ncdai4O62PTwuJVVWe4t1/x6zf7jfyrkK6+6/49Zv8Acb+VchW+E2Zy5j8UQrX8Pf6+b/dH86yK1/D3+vm/3R/Otq/8NnNhP40TdrK8Qf8AHtF/v/0rVrK8Qf8AHtF/v/0rgofxEeti/wCDIwKKKK9Q8A6jSf8AkGw/Q/zNWZ4/NgkjP8akVW0n/kGw/Q/zNXK8mbtN+p9FSV6UU+36HGMCrFSMEHBFJWnrVoYbjz0H7uQ8+xrMr1ISU4po8GrTdObiy/pd/wDY5CsgJifrjsfWugjuYJV3RzIw+tchRWVTDxm77HRQxk6UeW10ddJdW8QzJMg/HmsqfWz56+QmYlPO7q3+FY1FKGGhHfUdTHVJfDodhbzx3MIlibKn9PapK5SyvJLObenKn7y+tdRDIs0SyKCAwyMjBrkrUXTfkejhsSq0fND65K9/4/rj/ro38662uSvf+P64/wCujfzrXCfEznzH4Y+v6EFXdJ/5CcP1P8jVKruk/wDITh+p/ka66nwM86j/ABI+qOnqG7/485/+ubfyqaobv/jzn/65t/KvKjuj6Cfws5GiiivYPmjZ8Pf6yf6D+tbdYnh7/WT/AEH9a2683EfxGe7gv4K+Zm69/wAeA/66D+Rrna6LXv8AjwH/AF0H8jXO11YX+Gefj/43yQV0ui/8g1Pqf51zVdLov/INT6n+dLFfAPL/AOL8i/RRRXnnshRRRQBU1K2+02pwPnTlf8K5uuvrm9Tg8i9YAfK/zL+NcWKh9tGc11J9HtfNnMzj5I+nua3agsoPs9qkeOcZb61PXRRhyQsVFWQUUUVqUFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFADZP9U/0NcbXadai+zQf88I/wDvgVvRrKnfQ5MVhnWtZ2schVzSv+QlD9T/ACNdH9mg/wCeEf8A3wKVYIVYMsSAjoQorWWKTTVjnhgJRkpc2xJRRRXGemFFFFABRRRQAVTv9PjvFz92UdG/oauUU4ycXdEzhGa5ZLQ5O5s7i2J82M4/vDkH8ar12lQPZ2rnLW8ZPrtFdccX/Mjzp5dr7kvvOSp8cUkrbYkZz6AZrqRYWgORbx/iM1OqKgwihR6AYpvFroiY5c7+9IydP0jYwlusEjkJ2H1rXoorlnUlN3Z6NKlGlG0Qo6jBooqDQwtQ0h0cyWq7kPJQdR9KymVkYqylSOxGK7KmsiOMOqt9RmuqGKklaSucFXARk7xdjja1vD//AB9Sf7n9RWz9mg/54R/98CnJFHGcpGin2UCnUxKlFxsTRwLpzUubYfWDqGkujmW1Xch5KDqv0reorCnUlTd0ddahGtG0jjCCDgggjsaSuwkgil/1sSP/ALyg1GLG0Bz9nj/75rqWLXVHnvLpX0kczb28ty+yFCx7nsPrS3dubW5aEtuKgZP4ZrrFVUXaihR6AYprQxO254kYnuVBqfrbvtoaf2cuWyepx1WdP/4/4P8AfFdN9mg/54R/98ClEEKkFYYwR0IUU5YpNNWJjl8oyT5iSs/XP+Qef94VoUjorrtdQw9CM1yQlyyTPRqw54OPc4yiuv8As0H/ADwj/wC+BR9mg/54R/8AfArs+trseb/Z0v5inoX/ACD/APgZrRpERUGEUKPQDFLXHOXNJs9GlDkgo9goooqTQKKKKACiiigCteWUN4mJBhh0YdRWHc6TdQElF81fVev5V0tFbU60oaLY5q2Fp1dXozjGUqcMCD6EUldk6I4w6Kw9xmoWsbRutvH+C4roWLXVHHLLpdJHJ0tdUNPsx/y7p+VSxwQxf6uJE/3VAoeLj0Qll0usjm7fTrq4I2xlV/vPwK3LHTorMbh88h6sf6VcornqV5T06HZRwlOk77sKKKKxOoKx9S0oyOZrUDJ5ZPX3FbFFXCbg7oyq0o1Y8sjjpI3jbbIjKfQjFMrs2VWGGUEehFR/Z4P+eMf/AHwK6li+6OB5c76SMPQf+P5v+uZ/mK6GmJDEhykaKfUKBT65qtT2kuY7cPRdKHK3cy9U0szsZ7fHmfxL/e/+vWFJG8TFZEZWHYjFdjTXjSQYkRWHowzWtPEuCs9TCvgo1HzRdmcbTkR5HCRqWY9ABXVfYbTOfs8f/fNSxxRxDEcaoP8AZGK1eLXRGEculfWRzF3ZPaJEZSN75JA7VVrsnijkx5iK2Om4Zpn2aD/nhH/3wKmOLstUVPLrv3XZHIV2MH+oj/3R/Km/ZoP+eEf/AHwKlAwMDpWVasqltDow2GdFtt3uRXX/AB6Tf9c2/lXIV2hAIIIyD1FRfZoP+eEf/fAp0ayppqwsThnWaadrHIVseHv9dN/uitf7NB/zwj/74FPSKOMkxxqueu0Yq6mJU4uNjOjgnTmp32HUUUVyHoBRRRQAUUUUAFFFFABVC/0yO7y6EJL69j9av0VUZOLuiJ041FyyRydxZ3FsT5sZA/vDkfnVeu0qF7O2kOXgjJ9dorqji/5kefPLtfcl95yNKqliAoJJ7CuqGn2Y/wCXeP8AKpo4o4hiONE/3RiqeLXRExy6XWRg2ejzSkNcZjT0/iP+Fb0USQxiOJQqjoBT6K5alWVTc7qOHhRXu7kV1/x6zf7jfyrkK7QgEEEZBqL7NB/zwj/74FXRrKmnoZYnDOs007WOQrX8Pf6+b/dH862Ps0H/ADwj/wC+BTkijjJMcarn+6MVpUxKnFxsZUcE6c1O+w+srxB/x7Rf7/8AStWmvGkgw6KwHqM1z05cklI7a1P2kHHucbRXX/ZoP+eEf/fAo+zQf88I/wDvgV1/W12PO/s6X8xBpP8AyDYfof5mrlIqqihVUKB0AGKWuOTu2z04R5YqPYbLGk0bRyKGVuoNYF5pE0LFrcGWP0H3h/jXQ0VVOrKnsZVsPCsveOMZSpIYEEdjSV2UkUcgxJGrj/aGagNhZnrbx/gK6li11Rwyy6XSRylSRQyzNtijZz7CuoWxtFPFvH+K5qdVCjCgAegpPFrohxy5/akZNho4jIkusMw6IOg+vrWvRRXLOcpu7PQpUoUlaKCuSvf+P64/66N/OutqM28JJJhjJPJJUVdGqqbbsZYnDuskk7WOPq7pP/ITh+p/ka6L7NB/zwj/AO+BTlghRgyxIpHQhQK2lik4tWOWGAlGSlzbD6hu/wDjzn/65t/KpqCAQQRkHqDXInZ3PSkrpo4uiuv+zQf88I/++BR9mg/54R/98Cu362ux5f8AZ0v5jJ8Pf6yf6D+tbdNSKOPPlxqueu0Yp1ctWfPLmO+hS9lBQbM3Xv8AjwH/AF0H8jXO12TojjDqrD0IzTPs0H/PCP8A74Fa0sQqcbWOfEYN1Z8ydjkK6XRf+Qan1P8AOrX2aD/nhH/3wKkVFRdqKFHoBiitXVSNrBhsI6M+Zu4tFFFcx3BRRRQAVUvLXz57d8fcf5vp1/p+tW6ikkb7RFEh65ZvoP8A65FJw51ZkyaS1JaKKKZQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUVzN81zbXckXny7Qcr856VrSp+0drmFev7FJtXOmorkftVz/wA/Ev8A32aPtVz/AM/Ev/fZrb6o+5y/2jH+U66iuR+1XP8Az8S/99mj7Vc/8/Ev/fZo+qPuH9ox/lOuorK0S8aVGglcs6/MpJySK1a55wcJcrO2lUVSCkgoooqDQKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAqraHzpZrnsx2J/uj/wCvmjUJmjg8uP8A1sx2J+Pep4Y1hhSJeijAq9o37mbfNO3YfRRRUGgUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVla7beZAs6j5o+G+latIyh1KsMqRgirhNwkpGdWmqkHFnGUVYvbZrW5aI9Byp9RVevVTTV0fPSi4tphRRRTJJbeZredJU6qfzrrIZUmiWWM5VhkVx1aui3vlSfZ5D8jn5T6GubE0+Zcy3R3YKvyS5Hs/zN+iiivPPZCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo6UVm6rct8tnBzLLwcdhVQi5OyIqVFTjzMW1P22/e6/5ZRfJH7nua0aitoFtrdIk6KOvqalpzkm9NhUouMdd3uFFFFQaBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBQ1az+02+9B+9j5HuPSuartK5/WbHyZftEY/dufmA/hNdmGq/YZ5mOoX/eR+Zl0UUV2nlhS0lFAHSaTffaovLkP71Bz/ALQ9a0K46KV4ZVkjOGU5BrqLC8S8h3Lw4+8vpXn4ijyvmWx7ODxPtFyS3X4lmiiiuY7gooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiio7ieO3haWU4UfrTSvohNpK7I767SzgMjcseFX1NUtIt3dmvp+ZJPu59PWqkKy6vfGSXIiTqPQeldAAFAAGAOAK3n+7jy9Xv/kclNuvP2j+Fbf5hRRRXOdgUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABTZI1ljZHAKsMEU6igGrnK39m9nPtOSh5VvUVVrr7m3juoTFIOD0PcH1rl7u2ktJjHIPoexFelQrc6s9zxMVhnSfNHYgooorc4wqW3nkt5RJE2GH6+1RUUNX0Y02ndHV2N7HeRbl4cfeX0qzXHwyyQyCSJirDuK6LT9SjuwEfCTenY/SvPrUHDWOx7GGxaqe7Pf8y9RRRXMdwUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUVWvL2KzjzIcsfuqOpppNuyJlJRV5PQluJ47eIySthR+tc9LLPqt2qKML/CvZR6mopprjUbkDBZicKo6Cug0+ySzhwMGRvvNXVZUFd/EefzSxcuVaQX4ktrbpawLFGOB1PqfWpaKK5W23dnopKKsgooopDCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACoLu1ju4THIPow6g1PRTTad0KUVJWZyd3aS2kuyQcfwsOhqvXYTwR3ERjlXcp/Sucv9Ols23ffiPRvT616FGup6Pc8bE4R0/ejqvyKVFFFdBxBSgkEEHBFJRQBsWOslcR3eWHZx1H1rajdJEDxsGU9CDXG1PbXU1q+6FyPUdjXLVwylrHQ76GOlDSeq/E62isy01mGXCzjyn9f4T/hWkpDAFSCD0IrilCUHaSPUp1YVFeLFoooqTQKKKKACiiigAooooAKKKKACiiigAooooAKCQBknAFUbrVba3yqnzH9F6fnWJd6hcXZw7bU/uL0/+vW9PDyn5I5a2Mp09FqzUvtYSPMdrh3/AL/Yf41jIs95cYG6SRupNOs7OW7k2xjgfeY9BXSWdnFaR7Yxkn7zHqa3lKFBWjuccIVcXLmnpEZp9glnH/ekb7zf0FW6KK4pScndnqQhGC5Y7BRRRSKCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKRgGUqwBB6g0tFAGLf6P1ktPxjP9KxmVlYqwII6gjpXZ1Xu7KC7X96vzdmHUV1UsS1pI8+vgVL3qejOTorQu9KuLfLIPNj9VHI+oqhXbGSkrpnlzpyg7SVhKKKKogKmt7qe2OYZGX27H8KhopNJ6Mak4u6Nq31zoLiL/gSf4Vow39rP9yZQfRuD+tcpRWEsNB7aHZTx1WO+p2lFchFcTQ/6qV0+jVaj1e8TrIr/wC8orB4SXRnVHMIP4k0dLRWEmuzD78KH6EipBrw/itj+D//AFqh4ep2NljaL6mzRWR/b0f/ADwb/vqkOvL2tyfq/wD9al7Cp2H9co/zGxRWG2vSH7kCj6tmoH1m8b7pRP8AdX/GqWGqMh46ittTo6hmu7eD/WzIp9M5P5VzEt3czf6yZyPTPH5VBWscJ/MzCeY/yx+83p9cjXIt4y59W4FZdzf3NzkSSEL/AHV4FVat2mn3F0QUXan99uB/9etlTp01c5JVq1d8v4Iq1p2OkSTYkucxp/d7n/CtSz02C1wwG+T+839PSrlYVMVfSB2UMAl71T7hkUSQxhIlCqOgFPoorj3PSStogooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAqrdadbXOS6bX/vLwatUU4ycXdEyhGatJXOeuNFuI8mEiVfToaz5I3jbbIjK3oRiuxpskaSrtkRWHowzXTDFSXxK5w1Mvg9YOxxtFdJNo9pJygaM/wCyeP1qlLoUo/1Uyt7MMV0RxNN9bHHPBVo7K5kUVdk0u9T/AJYlh6qQarvbzp9+GRfqprVTi9mc8qc47pkVFL0pKogKKKWgBKKkWGV/uRO30Ump49NvJOkDD/e4/nUuUVuy405y2TKlFasWhzt/rZUQe3Jq7DotsnMheQ+5wP0rOWIprqbwwVaXS3qc8qlmCqCSewFX7fSLqbBcCJfVuv5V0EUEUIxFGqfQVJXPPFt/Cjsp5fFazdyja6VbQYZl81/Vun5VeoormlJyd2zuhTjBWirBRRRUlhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAIVDdQD9RTTDEesSf98in0U7sTSYzyIR0iT/vkU4Kq/dUD6CloouwskFFFFIYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH/2Q==" alt="Polarstar Chemical" width="48" height="20">
+   451|      Polarstar Chemical
+   452|    </a>
+   453|    <ul class="nav-links">
+   454|      <li><a href="#products">Products</a></li>
+   455|      <li><a href="#industries">Industries</a></li>
+   456|      <li><a href="#why">Why Us</a></li>
+   457|      <li><a href="#contact" class="nav-cta">Get Quote</a></li>
+   458|    </ul>
+   459|  </div>
+   460|</nav>
+   461|
+   462|<!-- ===== HERO ===== -->
+   463|<header class="hero">
+   464|  <div class="hero-particles"></div>
+   465|  <div class="hero-grid"></div>
+   466|  <div class="hero-content">
+   467|    <div>
+   468|      <div class="hero-badge"><span class="dot"></span> China-Based · Global Supply Partner</div>
+   469|      <h1>Premium <span>Coalescing Agents</span> & Industrial Solvents</h1>
+   470|      <p>
+   471|        Trusted chemical supply partner for paints, coatings, inks, and industrial sectors worldwide.
+   472|        Quality products, competitive pricing, dedicated service.
+   473|      </p>
+   474|      <div class="hero-btns">
+   475|        <a href="#products" class="btn btn-primary">Explore Products →</a>
+   476|        <a href="#contact" class="btn btn-outline">Request Quote</a>
+   477|      </div>
+   478|    </div>
+   479|    <div class="hero-visual">
+   480|      <div class="molecule">
+   481|        <div class="mol-ring"></div>
+   482|        <div class="mol-ring"></div>
+   483|        <div class="mol-ring"></div>
+   484|        <div class="mol-dot"></div>
+   485|        <div class="mol-dot"></div>
+   486|        <div class="mol-dot"></div>
+   487|        <div class="mol-dot"></div>
+   488|      </div>
+   489|    </div>
+   490|  </div>
+   491|</header>
+   492|
+   493|<!-- ===== STATS ===== -->
+   494|<div class="stats-bar">
+   495|  <div class="stats-inner">
+   496|    <div class="stat-item">
+   497|      <div class="stat-icon">🧪</div>
+   498|      <div class="stat-num">20+</div>
+   499|      <div class="stat-label">Products</div>
+   500|    </div>
+   501|    <div class="stat-divider"></div>
+   502|    <div class="stat-item">
+   503|      <div class="stat-icon">📦</div>
+   504|      <div class="stat-num">4</div>
+   505|      <div class="stat-label">Categories</div>
+   506|    </div>
+   507|    <div class="stat-divider"></div>
+   508|    <div class="stat-item">
+   509|      <div class="stat-icon">🌍</div>
+   510|      <div class="stat-num">Global</div>
+   511|      <div class="stat-label">Supply Network</div>
+   512|    </div>
+   513|    <div class="stat-divider"></div>
+   514|    <div class="stat-item">
+   515|      <div class="stat-icon">🤝</div>
+   516|      <div class="stat-num">24/7</div>
+   517|      <div class="stat-label">Response</div>
+   518|    </div>
+   519|  </div>
+   520|</div>
+   521|
+   522|<!-- ===== PRODUCTS ===== -->
 <div class="products-section" id="products">
   <div class="products-inner">
     <div class="section-header">
       <div class="section-label">Our Products</div>
-      <h2>Comprehensive Chemical Portfolio</h2>
-      <p>From essential coalescing agents to premium high-boiling solvents — everything your formulation needs.</p>
+      <h2>Coating-Focused Chemical Portfolio</h2>
+      <p>Comprehensive solutions for paints, coatings, inks, and industrial formulations — from coalescents to pigments.</p>
     </div>
 
-    <!-- Category 1: ⭐ CORE Coalescing Agents -->
+    <!-- Category 1: ⭐ Coalescing Agent -->
     <div class="product-category c1">
       <div class="cat-header">
         <div class="cat-icon-box c1">🧪</div>
         <div>
-          <div class="cat-title">⭐ Coalescing Agents <span style="font-size:12px;font-weight:500;background:#2563eb;color:#fff;padding:2px 10px;border-radius:10px;margin-left:8px;vertical-align:middle;">Core</span></div>
-          <div class="cat-desc">Essential film-forming agents for water-based paints & coatings — our flagship line</div>
+          <div class="cat-title">⭐ Coalescing Agent <span style="font-size:12px;font-weight:500;background:#2563eb;color:#fff;padding:2px 10px;border-radius:10px;margin-left:8px;vertical-align:middle;">Flagship</span></div>
+          <div class="cat-desc">Industry-standard film-forming aid for water-based paints & coatings</div>
         </div>
       </div>
       <div class="product-grid">
         <div class="product-card">
           <div class="prod-icon">🎨</div>
-          <h4>Texanol / RTC-12</h4>
-          <div class="alias">C₁₂ Ester Alcohol</div>
-          <div class="desc">Industry gold standard. Excellent low-temperature film formation for architectural & industrial water-based coatings.</div>
+          <h4>Coalescing Agent C12</h4>
+          <div class="alias">Texanol Equivalent · 十二碳醇酯</div>
+          <div class="desc">Industry gold standard for water-based coatings. Excellent low-temperature film formation, broad emulsion compatibility. Counter-types: Eastman Texanol, Synthomer NX795.</div>
           <div class="tags"><span class="tag">Architectural</span><span class="tag">Industrial</span><span class="tag">Water-based</span></div>
-        </div>
-        <div class="product-card">
-          <div class="prod-icon">✨</div>
-          <h4>PNB</h4>
-          <div class="alias">Propylene Glycol n-Butyl Ether</div>
-          <div class="desc">High-performance coalescent with strong solvency. Perfect for high-gloss and industrial maintenance coatings.</div>
-          <div class="tags"><span class="tag">High Gloss</span><span class="tag">Industrial</span></div>
-        </div>
-        <div class="product-card">
-          <div class="prod-icon">🕐</div>
-          <h4>DPNB</h4>
-          <div class="alias">Dipropylene Glycol n-Butyl Ether</div>
-          <div class="desc">Slow-evaporating for extended open time. Ideal for automotive and water-based industrial coatings.</div>
-          <div class="tags"><span class="tag">Automotive</span><span class="tag">Extended Open Time</span></div>
-        </div>
-        <div class="product-card">
-          <div class="prod-icon">💎</div>
-          <h4>TPNB</h4>
-          <div class="alias">Tripropylene Glycol n-Butyl Ether</div>
-          <div class="desc">Ultra-high boiling coalescent for premium formulations. Maximum film integrity under demanding conditions.</div>
-          <div class="tags"><span class="tag">Premium</span><span class="tag">High Temp</span></div>
         </div>
       </div>
     </div>
 
-    <!-- Category 2: Glycol Ethers — Standard -->
+    <!-- Category 2: Glycol Ethers -->
     <div class="product-category c2">
       <div class="cat-header">
         <div class="cat-icon-box c2">⚗️</div>
         <div>
-          <div class="cat-title">Glycol Ethers — Standard Grade</div>
-          <div class="cat-desc">Versatile cost-effective solvents for coatings, inks, and cleaning applications</div>
+          <div class="cat-title">Glycol Ethers & Acetates</div>
+          <div class="cat-desc">Versatile solvents for coatings, inks, and industrial cleaning</div>
         </div>
       </div>
       <div class="product-grid">
-        <div class="product-card">
-          <div class="prod-icon">🖌️</div>
-          <h4>DPM</h4>
-          <div class="alias">Dipropylene Glycol Methyl Ether</div>
-          <div class="desc">The versatile workhorse — balanced evaporation rate. Widely used in coatings, inks, and cleaners.</div>
-          <div class="tags"><span class="tag">Coatings</span><span class="tag">Inks</span><span class="tag">Cleaning</span></div>
-        </div>
         <div class="product-card">
           <div class="prod-icon">💧</div>
           <h4>PM</h4>
           <div class="alias">Propylene Glycol Methyl Ether</div>
           <div class="desc">Light, fast-evaporating glycol ether. Excellent for water-based coatings and electronic cleaning.</div>
-          <div class="tags"><span class="tag">Water-based</span><span class="tag">Electronics</span><span class="tag">Cleaning</span></div>
+          <div class="tags"><span class="tag">Water-based</span><span class="tag">Electronics</span></div>
+        </div>
+        <div class="product-card">
+          <div class="prod-icon">🖌️</div>
+          <h4>PMA</h4>
+          <div class="alias">Propylene Glycol Methyl Ether Acetate</div>
+          <div class="desc">High-performance acetate solvent. Exceptional solvency for automotive, electronics, and premium coatings.</div>
+          <div class="tags"><span class="tag">Automotive</span><span class="tag">Electronics</span><span class="tag">Premium</span></div>
+        </div>
+        <div class="product-card">
+          <div class="prod-icon">✨</div>
+          <h4>PnB</h4>
+          <div class="alias">Propylene Glycol Butyl Ether</div>
+          <div class="desc">Strong coalescing solvent. Perfect for high-gloss and industrial maintenance coatings.</div>
+          <div class="tags"><span class="tag">High Gloss</span><span class="tag">Industrial</span></div>
+        </div>
+        <div class="product-card">
+          <div class="prod-icon">🕐</div>
+          <h4>DPnB</h4>
+          <div class="alias">Dipropylene Glycol Butyl Ether</div>
+          <div class="desc">Slow-evaporating for extended open time. Ideal for automotive and water-based industrial coatings.</div>
+          <div class="tags"><span class="tag">Automotive</span><span class="tag">Extended Open Time</span></div>
         </div>
         <div class="product-card">
           <div class="prod-icon">🧴</div>
-          <h4>EB / 防白水</h4>
-          <div class="alias">Ethylene Glycol Butyl Ether</div>
-          <div class="desc">The most widely used glycol ether solvent. Essential for water-based paints, cleaners, and inks.</div>
-          <div class="tags"><span class="tag">Coatings</span><span class="tag">Cleaning</span><span class="tag">High Volume</span></div>
+          <h4>BGA</h4>
+          <div class="alias">Ethylene Glycol Monobutyl Ether Acetate</div>
+          <div class="desc">High-boiling acetate solvent with strong solvency power. Widely used in coatings, inks, and industrial cleaners.</div>
+          <div class="tags"><span class="tag">Coatings</span><span class="tag">Inks</span><span class="tag">High Boiling</span></div>
         </div>
       </div>
     </div>
 
-    <!-- Category 3: Glycol Ethers — High-Boiling -->
-    <div class="product-category c2">
+    <!-- Category 3: Paint Additives -->
+    <div class="product-category c1">
       <div class="cat-header">
-        <div class="cat-icon-box c1">🔥</div>
+        <div class="cat-icon-box c1">🔬</div>
         <div>
-          <div class="cat-title">Glycol Ethers — High-Boiling / Premium</div>
-          <div class="cat-desc">Specialty solvents for demanding automotive, electronics, and high-temperature applications</div>
+          <div class="cat-title">Paint & Coating Additives</div>
+          <div class="cat-desc">Performance enhancers for modern coating formulations</div>
         </div>
       </div>
       <div class="product-grid">
         <div class="product-card">
-          <div class="prod-icon">🏎️</div>
-          <h4>DPMA</h4>
-          <div class="alias">Dipropylene Glycol Methyl Ether Acetate</div>
-          <div class="desc">Premium high-boiling solvent with exceptional solvency. Top choice for automotive and electronics.</div>
-          <div class="tags"><span class="tag">Automotive</span><span class="tag">Electronics</span><span class="tag">Premium</span></div>
+          <div class="prod-icon">🧬</div>
+          <h4>CAB</h4>
+          <div class="alias">Cellulose Acetate Butyrate</div>
+          <div class="desc">Binder for protective & decorative coatings on metal, wood, plastics, and leather. Available: CAB-381-0.5, CAB-381-2, CAB-551-0.01 (Eastman counter-types).</div>
+          <div class="tags"><span class="tag">Automotive</span><span class="tag">Wood</span><span class="tag">Plastics</span><span class="tag">Leather</span></div>
         </div>
         <div class="product-card">
-          <div class="prod-icon">🕐</div>
-          <h4>TPM</h4>
-          <div class="alias">Tripropylene Glycol Methyl Ether</div>
-          <div class="desc">Slow-evaporating specialist. Perfect for screen inks, overprint varnishes, and high-heat uses.</div>
-          <div class="tags"><span class="tag">Screen Inks</span><span class="tag">High Temp</span></div>
+          <div class="prod-icon">🫧</div>
+          <h4>Defoamer</h4>
+          <div class="alias">消泡剂</div>
+          <div class="desc">Eliminates normal & abnormal bubbles in coatings. Counter-types: Tego 810/825/901W, BYK 019/022/024, DOW DC-65/AFE-1267, BASF NDW/2157.</div>
+          <div class="tags"><span class="tag">Aqueous</span><span class="tag">Solvent-based</span></div>
         </div>
         <div class="product-card">
-          <div class="prod-icon">🛢️</div>
-          <h4>DB</h4>
-          <div class="alias">Diethylene Glycol Butyl Ether</div>
-          <div class="desc">High-boiling, low-evaporation solvent. Ideal for baking enamels, industrial cleaners, and printing inks.</div>
-          <div class="tags"><span class="tag">Baking Enamels</span><span class="tag">Inks</span><span class="tag">High Boiling</span></div>
+          <div class="prod-icon">🎯</div>
+          <h4>Dispersant</h4>
+          <div class="alias">分散剂</div>
+          <div class="desc">Wetting, dispersing & stabilizing pigments for best performance. Counter-types: Solsperse, BYK P104S/161/163, TEGO 750W/755W, BASF N40/A40.</div>
+          <div class="tags"><span class="tag">Pigments</span><span class="tag">Universal</span></div>
+        </div>
+        <div class="product-card">
+          <div class="prod-icon">🧴</div>
+          <h4>Thickener</h4>
+          <div class="alias">Cellulose Thickeners · HEC / HPMC / HEMC</div>
+          <div class="desc">Controls water binding in cement, gypsum & fillers for high adhesion. Viscosity grades: 400 to 200,000.</div>
+          <div class="tags"><span class="tag">Construction</span><span class="tag">Wall Coatings</span></div>
+        </div>
+        <div class="product-card">
+          <div class="prod-icon">🪨</div>
+          <h4>Bentonite</h4>
+          <div class="alias">Rheology Modifier · 膨润土</div>
+          <div class="desc">Forms gel with organic solvents & oils. Increases viscosity, prevents settling, improves flow. Counter-types: Bentone 34/27/52, Bengel 434/818, Claytone 40.</div>
+          <div class="tags"><span class="tag">Anti-settling</span><span class="tag">Thixotropy</span></div>
+        </div>
+        <div class="product-card">
+          <div class="prod-icon">⚖️</div>
+          <h4>pH Stabilizer</h4>
+          <div class="alias">AMP-95 Equivalent</div>
+          <div class="desc">High-efficiency pH control, enhances pigment & latex dispersion, controls corrosion. Counter-type: DOW AMP-95.</div>
+          <div class="tags"><span class="tag">Water-based</span><span class="tag">pH Control</span></div>
         </div>
       </div>
     </div>
 
-    <!-- Category 4: Hydrocarbon Solvents — Partner Factory -->
+    <!-- Category 4: Pigments & Fillers -->
+    <div class="product-category c2">
+      <div class="cat-header">
+        <div class="cat-icon-box c2">🎨</div>
+        <div>
+          <div class="cat-title">Pigments & Fillers</div>
+          <div class="cat-desc">Essential raw materials for color, coverage, and performance</div>
+        </div>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="prod-icon">⚪</div>
+          <h4>Titanium Dioxide</h4>
+          <div class="alias">TiO₂ · 钛白粉</div>
+          <div class="desc">World's best white pigment. Rutile grade (sulphate & chloride process). CAS: 13463-67-7.</div>
+          <div class="tags"><span class="tag">Universal</span><span class="tag">High Opacity</span></div>
+        </div>
+        <div class="product-card">
+          <div class="prod-icon">🟤</div>
+          <h4>Iron Oxide</h4>
+          <div class="alias">氧化铁</div>
+          <div class="desc">Most widely used inorganic pigments. Available in red, yellow, black, orange & brown.</div>
+          <div class="tags"><span class="tag">Colorants</span><span class="tag">Construction</span></div>
+        </div>
+        <div class="product-card">
+          <div class="prod-icon">⬜</div>
+          <h4>Barium Sulfate</h4>
+          <div class="alias">BaSO₄ · 硫酸钡</div>
+          <div class="desc">Premium filler for powder coatings & paints. Precipitated & natural grades for high-gloss to matte finishes.</div>
+          <div class="tags"><span class="tag">Fillers</span><span class="tag">Powder Coatings</span></div>
+        </div>
+        <div class="product-card">
+          <div class="prod-icon">⬛</div>
+          <h4>Carbon Black</h4>
+          <div class="alias">炭黑</div>
+          <div class="desc">High-performance black pigment. Excellent tinting strength, UV protection, and conductivity.</div>
+          <div class="tags"><span class="tag">Pigments</span><span class="tag">UV Protection</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category 5: Hydrocarbon Solvents (de-emphasized) -->
     <div class="product-category c3">
       <div class="cat-header">
         <div class="cat-icon-box c3">🤝</div>
         <div>
           <div class="cat-title">Hydrocarbon Solvents <span style="font-size:11px;font-weight:400;background:#fef3c7;color:#92400e;padding:2px 10px;border-radius:10px;margin-left:8px;vertical-align:middle;border:1px solid #fde68a;">Partner Factory</span></div>
-          <div class="cat-desc">High-purity solvents via trusted manufacturing partners — rubber, adhesives & specialty use</div>
+          <div class="cat-desc">High-purity industrial solvents via trusted manufacturing partners — available upon request</div>
         </div>
       </div>
       <div class="product-grid">
@@ -651,155 +703,155 @@
           <div class="prod-icon">🔗</div>
           <h4>Cyclohexane</h4>
           <div class="alias">C₆H₁₂ · 环己烷</div>
-          <div class="desc">High-purity cyclic hydrocarbon. Essential for rubber processing, adhesives, and chemical synthesis.</div>
-          <div class="tags"><span class="tag">Rubber</span><span class="tag">Adhesives</span><span class="tag">High Purity</span></div>
+          <div class="desc">High-purity cyclic hydrocarbon for rubber processing, adhesives, and chemical synthesis.</div>
+          <div class="tags"><span class="tag">Rubber</span><span class="tag">Adhesives</span></div>
         </div>
         <div class="product-card">
           <div class="prod-icon">🧹</div>
           <h4>MCH</h4>
           <div class="alias">Methylcyclohexane · 甲基环己烷</div>
-          <div class="desc">Premium hydrocarbon with excellent solvency. Ideal for adhesives, sealants, and precision cleaning.</div>
-          <div class="tags"><span class="tag">Sealants</span><span class="tag">Precision Cleaning</span></div>
+          <div class="desc">Premium hydrocarbon solvent. Ideal for adhesives, sealants, and precision cleaning.</div>
+          <div class="tags"><span class="tag">Sealants</span><span class="tag">Cleaning</span></div>
         </div>
         <div class="product-card">
           <div class="prod-icon">📐</div>
           <h4>Isooctane</h4>
           <div class="alias">2,2,4-Trimethylpentane · 异辛烷</div>
-          <div class="desc">Ultra-high purity reference-grade hydrocarbon for fuel testing, lab, and specialty applications.</div>
-          <div class="tags"><span class="tag">Lab Grade</span><span class="tag">Reference Standard</span></div>
+          <div class="desc">Ultra-high purity reference-grade hydrocarbon for lab and specialty applications.</div>
+          <div class="tags"><span class="tag">Lab Grade</span><span class="tag">Specialty</span></div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 <!-- ===== INDUSTRIES ===== -->
-<div class="industries" id="industries">
-  <div class="industries-inner">
-    <div class="section-header">
-      <div class="section-label">Industries Served</div>
-      <h2>Trusted Across Sectors</h2>
-      <p>Our products power critical applications across diverse industries worldwide.</p>
-    </div>
-    <div class="ind-grid">
-      <div class="ind-card"><div class="ind-icon">🏠</div><h4>Architectural Coatings</h4></div>
-      <div class="ind-card"><div class="ind-icon">🏭</div><h4>Industrial Coatings</h4></div>
-      <div class="ind-card"><div class="ind-icon">🚗</div><h4>Automotive</h4></div>
-      <div class="ind-card"><div class="ind-icon">🖨️</div><h4>Printing Inks</h4></div>
-      <div class="ind-card"><div class="ind-icon">🧽</div><h4>Cleaning Products</h4></div>
-      <div class="ind-card"><div class="ind-icon">🔌</div><h4>Electronics</h4></div>
-      <div class="ind-card"><div class="ind-icon">🛞</div><h4>Rubber & Tires</h4></div>
-      <div class="ind-card"><div class="ind-icon">🔬</div><h4>Laboratory</h4></div>
-    </div>
-  </div>
-</div>
-
-<!-- ===== WHY US ===== -->
-<section class="why-us" id="why">
-  <div class="section-header">
-    <div class="section-label">Why Polarstar</div>
-    <h2>Your Trusted China Chemical Partner</h2>
-    <p>We don't just supply — we partner. Deep industry knowledge, reliable supply chains, and a commitment to your success.</p>
-  </div>
-  <div class="why-grid">
-    <div class="why-card">
-      <div class="why-icon">🔬</div>
-      <h3>Technical Expertise</h3>
-      <p>Deep understanding of paint formulations, evaporation curves, and what formulators actually need.</p>
-    </div>
-    <div class="why-card">
-      <div class="why-icon">🏭</div>
-      <h3>Quality Supply Chain</h3>
-      <p>Direct partnerships with vetted Chinese manufacturers. Consistent quality, stable supply, competitive prices.</p>
-    </div>
-    <div class="why-card">
-      <div class="why-icon">🚢</div>
-      <h3>Global Logistics</h3>
-      <p>FCL, LCL, flexitank — flexible shipping options. Experienced in international chemical logistics.</p>
-    </div>
-    <div class="why-card">
-      <div class="why-icon">🤝</div>
-      <h3>True Partnership</h3>
-      <p>Market insights, product recommendations, 24/7 support. Your success is our business.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ===== CTA ===== -->
-<div class="cta-banner">
-  <div class="cta-inner">
-    <h2>Ready to Source Premium Chemicals?</h2>
-    <p>Tell us what you need and get a competitive quote within 24 hours.</p>
-    <a href="#contact" class="btn-white">Get Your Quote Today →</a>
-  </div>
-</div>
-
-<!-- ===== CONTACT ===== -->
-<div class="contact-section" id="contact">
-  <div class="contact-inner">
-    <div class="contact-text">
-      <h2>Get in Touch</h2>
-      <p>Looking for reliable coalescing agents or industrial solvents? We're here to help.</p>
-      <ul class="contact-info-list">
-        <li><span class="ci-icon">✉️</span> marketing@polarstarchem.com</li>
-        <li><span class="ci-icon">📍</span> China · Global Shipping</li>
-        <li><span class="ci-icon">⏱️</span> Response within 24 hours</li>
-      </ul>
-    </div>
-    <div class="contact-form-box">
-      <h3>Send an Inquiry</h3>
-      <form name="contact" method="POST" action="https://formsubmit.co/marketing@polarstarchem.com">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://polarstarchem.github.io/thanks.html">
-        <input type="hidden" name="_subject" value="New Inquiry - Polarstar Chemical">
-        <input type="hidden" name="_template" value="table">
-        <div class="form-row">
-          <div class="form-group">
-            <label>Company *</label>
-            <input type="text" name="company" placeholder="Your company name" required>
-          </div>
-          <div class="form-group">
-            <label>Contact Person *</label>
-            <input type="text" name="name" placeholder="Your full name" required>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label>Email *</label>
-            <input type="email" name="email" placeholder="you@company.com" required>
-          </div>
-          <div class="form-group">
-            <label>Product Interest</label>
-            <select name="products">
-              <option value="">Select a product…</option>
-              <option>Texanol / RTC-12</option>
-              <option>PNB</option>
-              <option>DPNB</option>
-              <option>TPNB</option>
-              <option>DPM</option>
-              <option>PM</option>
-              <option>EB / 防白水</option>
-              <option>TPM</option>
-              <option>DPMA</option>
-              <option>DB</option>
-              <option>Cyclohexane</option>
-              <option>MCH</option>
-              <option>Isooctane</option>
-              <option>Multiple Products</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-group">
-          <label>Message</label>
-          <textarea name="message" placeholder="Tell us about your requirements, volume, destination port…"></textarea>
-        </div>
-        <button type="submit" class="btn-submit">Send Inquiry →</button>
-      </form>
-    </div>
-  </div>
-</div>
-
-<footer>© 2026 Polarstar Chemical. All rights reserved.</footer>
-
-</body>
-</html>
+   677|<div class="industries" id="industries">
+   678|  <div class="industries-inner">
+   679|    <div class="section-header">
+   680|      <div class="section-label">Industries Served</div>
+   681|      <h2>Trusted Across Sectors</h2>
+   682|      <p>Our products power critical applications across diverse industries worldwide.</p>
+   683|    </div>
+   684|    <div class="ind-grid">
+   685|      <div class="ind-card"><div class="ind-icon">🏠</div><h4>Architectural Coatings</h4></div>
+   686|      <div class="ind-card"><div class="ind-icon">🏭</div><h4>Industrial Coatings</h4></div>
+   687|      <div class="ind-card"><div class="ind-icon">🚗</div><h4>Automotive</h4></div>
+   688|      <div class="ind-card"><div class="ind-icon">🖨️</div><h4>Printing Inks</h4></div>
+   689|      <div class="ind-card"><div class="ind-icon">🧽</div><h4>Cleaning Products</h4></div>
+   690|      <div class="ind-card"><div class="ind-icon">🔌</div><h4>Electronics</h4></div>
+   691|      <div class="ind-card"><div class="ind-icon">🛞</div><h4>Rubber & Tires</h4></div>
+   692|      <div class="ind-card"><div class="ind-icon">🔬</div><h4>Laboratory</h4></div>
+   693|    </div>
+   694|  </div>
+   695|</div>
+   696|
+   697|<!-- ===== WHY US ===== -->
+   698|<section class="why-us" id="why">
+   699|  <div class="section-header">
+   700|    <div class="section-label">Why Polarstar</div>
+   701|    <h2>Your Trusted China Chemical Partner</h2>
+   702|    <p>We don't just supply — we partner. Deep industry knowledge, reliable supply chains, and a commitment to your success.</p>
+   703|  </div>
+   704|  <div class="why-grid">
+   705|    <div class="why-card">
+   706|      <div class="why-icon">🔬</div>
+   707|      <h3>Technical Expertise</h3>
+   708|      <p>Deep understanding of paint formulations, evaporation curves, and what formulators actually need.</p>
+   709|    </div>
+   710|    <div class="why-card">
+   711|      <div class="why-icon">🏭</div>
+   712|      <h3>Quality Supply Chain</h3>
+   713|      <p>Direct partnerships with vetted Chinese manufacturers. Consistent quality, stable supply, competitive prices.</p>
+   714|    </div>
+   715|    <div class="why-card">
+   716|      <div class="why-icon">🚢</div>
+   717|      <h3>Global Logistics</h3>
+   718|      <p>FCL, LCL, flexitank — flexible shipping options. Experienced in international chemical logistics.</p>
+   719|    </div>
+   720|    <div class="why-card">
+   721|      <div class="why-icon">🤝</div>
+   722|      <h3>True Partnership</h3>
+   723|      <p>Market insights, product recommendations, 24/7 support. Your success is our business.</p>
+   724|    </div>
+   725|  </div>
+   726|</section>
+   727|
+   728|<!-- ===== CTA ===== -->
+   729|<div class="cta-banner">
+   730|  <div class="cta-inner">
+   731|    <h2>Ready to Source Premium Chemicals?</h2>
+   732|    <p>Tell us what you need and get a competitive quote within 24 hours.</p>
+   733|    <a href="#contact" class="btn-white">Get Your Quote Today →</a>
+   734|  </div>
+   735|</div>
+   736|
+   737|<!-- ===== CONTACT ===== -->
+   738|<div class="contact-section" id="contact">
+   739|  <div class="contact-inner">
+   740|    <div class="contact-text">
+   741|      <h2>Get in Touch</h2>
+   742|      <p>Looking for reliable coalescing agents or industrial solvents? We're here to help.</p>
+   743|      <ul class="contact-info-list">
+   744|        <li><span class="ci-icon">✉️</span> marketing@polarstarchem.com</li>
+   745|        <li><span class="ci-icon">📍</span> China · Global Shipping</li>
+   746|        <li><span class="ci-icon">⏱️</span> Response within 24 hours</li>
+   747|      </ul>
+   748|    </div>
+   749|    <div class="contact-form-box">
+   750|      <h3>Send an Inquiry</h3>
+   751|      <form name="contact" method="POST" action="https://formsubmit.co/marketing@polarstarchem.com">
+   752|        <input type="hidden" name="_captcha" value="false">
+   753|        <input type="hidden" name="_next" value="https://polarstarchem.github.io/thanks.html">
+   754|        <input type="hidden" name="_subject" value="New Inquiry - Polarstar Chemical">
+   755|        <input type="hidden" name="_template" value="table">
+   756|        <div class="form-row">
+   757|          <div class="form-group">
+   758|            <label>Company *</label>
+   759|            <input type="text" name="company" placeholder="Your company name" required>
+   760|          </div>
+   761|          <div class="form-group">
+   762|            <label>Contact Person *</label>
+   763|            <input type="text" name="name" placeholder="Your full name" required>
+   764|          </div>
+   765|        </div>
+   766|        <div class="form-row">
+   767|          <div class="form-group">
+   768|            <label>Email *</label>
+   769|            <input type="email" name="email" placeholder="you@company.com" required>
+   770|          </div>
+   771|          <div class="form-group">
+   772|            <label>Product Interest</label>
+   773|            <select name="products">
+   774|              <option value="">Select a product…</option>
+   775|              <option>Texanol / RTC-12</option>
+   776|              <option>PNB</option>
+   777|              <option>DPNB</option>
+   778|              <option>TPNB</option>
+   779|              <option>DPM</option>
+   780|              <option>PM</option>
+   781|              <option>EB / 防白水</option>
+   782|              <option>TPM</option>
+   783|              <option>DPMA</option>
+   784|              <option>DB</option>
+   785|              <option>Cyclohexane</option>
+   786|              <option>MCH</option>
+   787|              <option>Isooctane</option>
+   788|              <option>Multiple Products</option>
+   789|            </select>
+   790|          </div>
+   791|        </div>
+   792|        <div class="form-group">
+   793|          <label>Message</label>
+   794|          <textarea name="message" placeholder="Tell us about your requirements, volume, destination port…"></textarea>
+   795|        </div>
+   796|        <button type="submit" class="btn-submit">Send Inquiry →</button>
+   797|      </form>
+   798|    </div>
+   799|  </div>
+   800|</div>
+   801|
+   802|<footer>© 2026 Polarstar Chemical. All rights reserved.</footer>
+   803|
+   804|</body>
+   805|</html>
+   806|
