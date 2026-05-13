@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://polarstarchem.github.io/sitemap.xml
