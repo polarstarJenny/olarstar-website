@@ -3,21 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Open Graph / Social -->
-  <meta property="og:title" content="Polarstar Chemical — Coating Additives, Coalescing Agents & Solvents">
-  <meta property="og:description" content="One-stop supplier of coalescing agents, glycol ethers, paint additives, pigments and fillers for the global coatings industry.">
-  <meta property="og:image" content="https://polarstarchem.github.io/og-image.png">
-  <meta property="og:url" content="https://polarstarchem.github.io">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Polarstar Chemical — Coating Additives & Solvents">
-  <meta name="twitter:description" content="Your all-in-one source for coating excellence. Coalescing agents, additives, pigments.">
-  <meta name="keywords" content="coalescing agent, Texanol, C12 alcohol ester, glycol ether, paint additives, CAB, cellulose acetate butyrate, defoamer, dispersant, titanium dioxide, coating raw materials, chemical supplier China">
-  <link rel="canonical" href="https://polarstarchem.github.io">
-
-  <title>Polarstar Chemical — Coating Additives, Coalescing Agents & Solvents</title>
-  <meta name="description" content="Polarstar Chemical supplies coalescing agents, glycol ethers, paint additives (CAB, defoamers, dispersants), pigments, and fillers for the global coatings industry.">
+  <title>Polarstar Chemical — Coalescing Agents & Industrial Solvents</title>
+  <meta name="description" content="Polarstar Chemical supplies premium coalescing agents, glycol ethers, and hydrocarbon solvents for the global paints, coatings, and industrial sectors.">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -39,7 +26,9 @@
       --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
       --shadow-lg: 0 10px 25px -5px rgba(0,0,0,0.08), 0 4px 10px -2px rgba(0,0,0,0.04);
     }
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
       font-family: 'Source Sans 3', system-ui, -apple-system, sans-serif;
       color: var(--slate);
@@ -47,6 +36,7 @@
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
+
     /* ========== NAV ========== */
     nav {
       position: sticky; top: 0; z-index: 100;
@@ -56,7 +46,7 @@
     }
     .nav-inner {
       max-width: 1200px; margin: 0 auto; padding: 0 24px;
-      display: flex; align-items: center; justify-content: space-between; height: 72px;
+      display: flex; align-items: center; justify-content: space-between; height: 64px;
     }
     .nav-logo {
       display: flex; align-items: center; gap: 10px;
@@ -64,8 +54,11 @@
       text-decoration: none; letter-spacing: -0.3px;
     }
     .nav-logo-img {
-      height: 56px; width: auto;
-      object-fit: contain;
+      width: 38px; height: 38px;
+      background: linear-gradient(135deg, var(--blue), #7c3aed);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      color: white; font-size: 20px; font-weight: 700;
     }
     .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
     .nav-links a {
@@ -78,6 +71,7 @@
       padding: 8px 20px; border-radius: 8px; font-weight: 500;
     }
     .nav-cta:hover { background: var(--blue-dark); }
+
     /* ========== HERO ========== */
     .hero {
       position: relative;
@@ -120,11 +114,6 @@
       -webkit-background-clip: text; -webkit-text-fill-color: transparent;
       background-clip: text; font-weight: 400;
     }
-    .hero-slogan {
-      font-size: 18px; font-weight: 500;
-      color: #fbbf24; letter-spacing: 0.5px;
-      margin-bottom: 16px;
-    }
     .hero p {
       font-size: 18px; font-weight: 300; color: rgba(255,255,255,0.6);
       line-height: 1.6; margin-bottom: 36px; max-width: 480px;
@@ -146,6 +135,7 @@
       border: 1px solid rgba(255,255,255,0.2);
     }
     .btn-outline:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.4); }
+
     .hero-visual {
       display: flex; justify-content: center; align-items: center;
     }
@@ -173,6 +163,7 @@
       background: linear-gradient(90deg, rgba(96,165,250,0.2), rgba(167,139,250,0.2));
       transform-origin: left center;
     }
+
     /* ========== STATS ========== */
     .stats-bar {
       position: relative; z-index: 2; margin-top: -40px;
@@ -189,6 +180,7 @@
     .stat-num { font-size: 32px; font-weight: 600; color: var(--navy); letter-spacing: -0.5px; }
     .stat-label { font-size: 13px; color: var(--slate); font-weight: 400; margin-top: 4px; }
     .stat-divider { width: 1px; height: 50px; background: var(--border); }
+
     /* ========== SECTIONS ========== */
     section { max-width: 1200px; margin: 0 auto; padding: 80px 24px; }
     .section-label {
@@ -205,25 +197,27 @@
       font-size: 17px; color: var(--slate); font-weight: 300;
       max-width: 560px; margin: 0 auto;
     }
+
     /* ========== PRODUCTS ========== */
     .products-section { background: var(--bg-light); max-width: 100%; padding: 80px 24px; }
     .products-inner { max-width: 1200px; margin: 0 auto; }
+
     .product-category { margin-bottom: 56px; }
     .product-category:last-child { margin-bottom: 0; }
     .cat-header {
       display: flex; align-items: center; gap: 16px; margin-bottom: 24px;
     }
     .cat-icon-box {
-      width: 72px; height: 72px; border-radius: 16px;
+      width: 52px; height: 52px; border-radius: 14px;
       display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0; padding: 12px;
+      font-size: 24px; flex-shrink: 0;
     }
-    .cat-icon-box svg { width: 100%; height: 100%; }
     .cat-icon-box.c1 { background: linear-gradient(135deg, #dbeafe, #bfdbfe); color: var(--blue); }
     .cat-icon-box.c2 { background: linear-gradient(135deg, #ccfbf1, #99f6e4); color: var(--teal); }
     .cat-icon-box.c3 { background: linear-gradient(135deg, #fef3c7, #fde68a); color: var(--amber); }
     .cat-title { font-size: 22px; font-weight: 500; color: var(--navy); }
     .cat-desc { font-size: 14px; color: var(--slate); font-weight: 300; }
+
     .product-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -247,6 +241,7 @@
     .c1 .product-card::before { background: var(--blue); }
     .c2 .product-card::before { background: var(--teal); }
     .c3 .product-card::before { background: var(--amber); }
+
     .product-card .prod-icon {
       width: 42px; height: 42px; border-radius: 10px;
       display: flex; align-items: center; justify-content: center;
@@ -255,6 +250,7 @@
     .c1 .prod-icon { background: #eff6ff; }
     .c2 .prod-icon { background: #f0fdfa; }
     .c3 .prod-icon { background: #fffbeb; }
+
     .product-card h4 {
       font-size: 18px; font-weight: 600; color: var(--navy);
       letter-spacing: -0.2px; margin-bottom: 4px;
@@ -275,6 +271,7 @@
       font-size: 11px; font-weight: 500; padding: 3px 10px;
       border-radius: 6px; background: #f1f5f9; color: var(--slate);
     }
+
     /* ========== WHY US ========== */
     .why-us { padding: 80px 24px; }
     .why-grid {
@@ -305,6 +302,7 @@
     .why-card p {
       font-size: 14px; font-weight: 300; color: var(--slate); line-height: 1.6;
     }
+
     /* ========== INDUSTRIES ========== */
     .industries { background: var(--bg-light); max-width: 100%; padding: 80px 24px; }
     .industries-inner { max-width: 1200px; margin: 0 auto; }
@@ -321,6 +319,7 @@
     .ind-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
     .ind-icon { font-size: 36px; margin-bottom: 12px; }
     .ind-card h4 { font-size: 15px; font-weight: 600; color: var(--navy); }
+
     /* ========== CTA BANNER ========== */
     .cta-banner {
       max-width: 1200px; margin: 0 auto; padding: 0 24px 80px;
@@ -353,6 +352,7 @@
       box-shadow: 0 4px 14px rgba(0,0,0,0.15);
     }
     .btn-white:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,0,0,0.25); }
+
     /* ========== CONTACT ========== */
     .contact-section {
       background: var(--navy); max-width: 100%; padding: 80px 24px;
@@ -417,17 +417,17 @@
       transition: all 0.2s;
     }
     .btn-submit:hover { background: var(--blue-dark); }
+
     /* ========== FOOTER ========== */
     footer {
       background: #020617; padding: 40px 24px; text-align: center;
       font-size: 13px; color: rgba(255,255,255,0.3); font-weight: 300;
     }
-    
+
     /* ========== RESPONSIVE ========== */
     @media (max-width: 768px) {
       .hero-content { grid-template-columns: 1fr; text-align: center; padding: 64px 24px 48px; }
       .hero h1 { font-size: 32px; }
-      .hero-slogan { font-size: 15px; }
       .hero p { margin: 0 auto 28px; }
       .hero-btns { justify-content: center; }
       .hero-visual { display: none; }
@@ -440,40 +440,14 @@
       .cta-inner h2 { font-size: 24px; }
     }
   </style>
-
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Polarstar Chemical",
-    "url": "https://polarstarchem.github.io",
-    "description": "One-stop supplier of coalescing agents, glycol ethers, paint additives, pigments and fillers for the global coatings industry.",
-    "email": "marketing@polarstarchem.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "CN"
-    },
-    "makesOffer": {
-      "@type": "Offer",
-      "itemOffered": [
-        {"@type": "Product", "name": "Coalescing Agent C12", "description": "Texanol equivalent C-12 alcohol ester"},
-        {"@type": "Product", "name": "Coalescing Agent C16", "description": "High-boiling C-16 alcohol ester"},
-        {"@type": "Product", "name": "CAB Cellulose Acetate Butyrate", "description": "CAB-381-0.5, CAB-381-2, CAB-551-0.01"},
-        {"@type": "Product", "name": "Glycol Ethers", "description": "PM, PMA, PnB, DPnB, BGA"},
-        {"@type": "Product", "name": "Titanium Dioxide", "description": "Rutile TiO2 pigment"}
-      ]
-    }
-  }
-  </script>
-
 </head>
 <body>
+
 <!-- ===== NAV ===== -->
 <nav>
   <div class="nav-inner">
     <a href="#" class="nav-logo">
-      <img class="nav-logo-img" src="data:image/jpeg;base64,/9j/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4pLSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk//2wBDAQ4ODhMREyYVFSZPNS01T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0//wAARCAH5BNgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD06iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKqzajaQ8NMpPovP8qpS67GP9VCze7HFaRpTlsjGeIpQ3ka9Fc9JrV033BGn0Gf51XfUbx+tww+nH8q1WFm9znlmFJbJs6miuRa5uG+9PKfq5pnmSHq7fnV/VH3M3mK6ROxorjvMk/vt+dOFxOv3ZpB9GNH1R9w/tFfynX0VyqaheJ0uH/E5/nU8es3i/eKP9V/wqHhZ9C45hTe6aOjorGi10dJYCPdT/AEq7DqlnLwJdh9HGP/rVnKjOO6OiGJpT2kXKKQEMMqQQe4payNwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiop7iK3TfM4UdvU00m9EJtJXZLUNxdQWy5mkC+g7n8KxrvWpZMrbDy1/vHqf8KzGZnYszFiepJzXVTwrestDgrY+MdKaua9xrhORbRY/2n/wrNnu7i4P72VmHpnA/KoKK6oUoQ2R51TEVKnxMKKKK0MQooooAKKUAscKCT6CrEdhdyfdt3/EY/nSckt2VGEpbK5WorRTRrxuoRfq3+FSDQrj+KWIfTP8AhUOtTXU1WGrP7LMqitf+wpf+e6fkaQ6FP2mjP1zS9vT7j+qVv5TJorSbRbtenlt9G/xqB9NvI+sDH/d5/lVKrB7Mh0Ksd4shhnmgOYpGT6GtG31uVcC4QOP7y8Gst0dDh1ZT6EYptEqcJ7oIVqlN+67HV219b3XEcg3f3W4NWa4zp0rQtNXngwsv71Pc8j8a5Z4VrWB6FLME9Ki+Z0dFV7W8gu1zE/PdTwRViuRpp2Z6MZKSumFFFFIYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFNkkSJC8jBVHUmuf1DVHuMxw5SL9WrSnSlUehhXxEKKu9y9f6ukOY7fDv3bsP8aw5ZZJpC8rlmPc1HRXo06UYLQ8atiJ1X723YKKKK0MAooqSKKSZwkSFmPYUN2Gk27Ijp8cbyttjRmb0AzWxaaIBhrts/7Cn+ZrWiijhTbEiovoBXNPFRWkdTupYCctZ6fmYVvotxJgzMsQ9OprRh0i0i5ZTIfVj/AEq/RXLKvOXU76eEpQ6X9RscccYxGioPRRinUUVidKVtgooooAKKKKACiiigBGVXGGUMPQjNVJtLs5f+WWw+qcf/AFquUVUZSjsyJU4z+JXMKfQ5FybeUOPRuDWbNbzQNiaNk+o4NdfSMqupV1DKeoIzW8MVJfFqclTAU5fDoccrMjBkYqw6EHpWzY6z0ju/wkH9alutGhky1ufLb06qf8Kxrm1mtW2zIR6Hsfxro5qdZW6nFy18K7rb8DrFYMoZSCD0I70tcvYahLZtj70R6of6V0dvcRXMQkibI/UVyVaMqb8j0qGJjWXZ9iWiiisTpCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKjnmjt4jJK2FH60s0qQRNJI2FXrXMX9695LuPCD7q+lbUaLqPyObE4lUV5i399JeSc/LGPur/jVSiivSjFRVkeHOcpvmluFFFFMkKKcis7BUBZjwAO9b2naSsOJbkBpOoXsv+JrOpVjTV2bUaE6ztEo2OkyXGJJsxx/qa3oLeK3j2QoFH6mpKK8+pVlU3Pao4eFJab9wooorI3CiiigAooooAKKKKACiiigAooooAKKKKACiiigAprokiFJFDKeoIp1FAbmJfaMVzJaZI7oev4Vm21zNZzbkJBHDKe/sa62qV/p0V2CwwkvZh3+tdVPEactTVHn1sHrz0tGTWd3Hdxb4zgj7ynqDU9cqpuNNu+m117dmH+FdHZ3Ud3CJI+D0Ze4NRWo8nvR2NcNifae7LSSJ6KKKwOsKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKRmCqWYgADJJ7UtYmtX24m1iPA++R39qunTc5WRlWqqlDmZU1O+N3LhSREp+UevvVGiivVjFRVkeBOcpycpbhRRRTICnxxvLIscalmY4AFIis7hUBLE4AHeul02wWzj3NgzMPmPp7CsqtVU15nRh8O60rdA07T0s03NhpiOW9PYVdoorzZScndnuQhGEeWOwUUUVJYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAQXdpFdxbJByPusOorAUz6Te/MMjv6OK6aoLy1ju4THJwf4W7g1tSq8vuy2OXEYfn9+GkkSQypPEssZyrDin1gWM8mm3htrniNj17D3HtW/U1afI9NjShW9pHXRrcKKKKzNgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKCQBknAFAFPU7v7JbEqf3j8J/jXMEkkknJNWdRujd3TOD8g4Qe1Va9OhT5I+Z4WKr+1npsgooorY5QoorR0ey+0TebIP3UZ/M+lTOSirsunTdSSii/o9h5KC4lH7xh8oP8IrUoorypzc5XZ9BSpxpxUYhRRRUmgUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBU1GyW8gwMCReVP9Kg0e6Z0NrNkSxcDPUj/wCtWlWXqkDQSrf24+ZD849RW1N8y9m/kc1WPJL2sfn6f8A1KKZDKs0KyocqwyKfWLVjoTTV0FFFFAwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigArN1u68m18pT88vH0HetKuW1K4+03ruDlR8q/QVvh4c079jkxtX2dOy3ZUooor0jwwooooAfFG00qxoMsxwK6y2gS2gSJOijr6n1rL0G1+9cuP9lP6mtmuDE1Ly5V0PYwNHlhzvd/kFFFFcp3hRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUjKGUqwyCMEUtFAGdYZtLuSyY/IfniJ9O4rRqnqMbGJbiMfvIDvHuO4q1G6yRq6nKsMitJ+9aRjSXI3Dtt6f8AdRRRWZsFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUjHapJ7DNZv9uWv9yb/vkf41UYSl8KM51YU/idjTorM/ty1/uTf98j/Gj+3LX+5N/3yP8AGr9jU7EfWqP8yNOisz+3LX+5N/3yP8aP7btf7kv/AHyP8aPY1OwfWaP8yNOiqUWq2chx5u0/7QxVxWVlDKQQehBzUSjKO6NI1Iz+F3FoooqSwooooAKKKKACiiigAooooAKKKq3l9FZbPNVzvzjaB2pqLk7ImUlBXk9C1RWZ/blr/cm/75H+NH9uWv8Acm/75H+NaexqdjL61R/mRp0UyKQSxJIucOARmn1lsbJ3V0FFFFAwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKZLLHCu6V1RfUnFUZdZtEOF3yf7o/xqowlLZGc6sIfE7GjRWQdej7QN/31SrrsP8UMg+hBq/YVOxn9bo/zGtRVKLVbOU48zYfRxirgIYAqQQehFRKMo7o1hUjP4XcWiiipLCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKguLy3tuJZVB/ujk/lVF9cgB+SKRvrgVcaU5bIynXpw0lI1aKyBr0feBv8Avqp4tYtJDhi0Z/2h/hVOjUXQmOKoy0UjQowPSkR1kUMjBlPQg5payN9wwPSjA9KbI4jjZznCgk4rO/ty1/uTf98j/GrjCUvhRnOrCHxOxp4HpRgelZn9uWv9yb/vkf41Zs9QhvGZYlcFRk7gKbpTSu0TGvSk7RlqWqKKKzNgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA69aq2I8oy2x/5ZNlf908j+oq1UMiEXUUqgnIKN9OoP5j9aqL0aIktVImoooqSwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAGyf6p/oa42uyk/1T/Q1xtduE2Z5eY7x+YUUUV2HmBRRRQAVPbXc1q+6FyB3U9DUFFJpNWY4ycXdHVWF9HeR5X5XX7y+lWq5G2ne2nWVDyOo9R6V1kbrLGsiHKsMivOr0vZu62PbwmI9rG0t0OooorA6wooooAKKKKACiiigArF8Rdbf/AIF/StqsXxF1t/8AgX9K2w/8RHLj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Ko6Cug0+ySzhwMGRvvNXVZUFd/EefzSxcuVaQX4ktrbpawLFGOB1PqfWpaKK5W23dnopKKsgooopDCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACoLu1ju4THIPow6g1PRTTad0KUVJWZyd3aS2kuyQcfwsOhqvXYTwR3ERjlXcp/Sucv9Ols23ffiPRvT616FGup6Pc8bE4R0/ejqvyKVFFFdBxBSgkEEHBFJRQBsWOslcR3eWHZx1H1rajdJEDxsGU9CDXG1PbXU1q+6FyPUdjXLVwylrHQ76GOlDSeq/E62isy01mGXCzjyn9f4T/hWkpDAFSCD0IrilCUHaSPUp1YVFeLFoooqTQKKKKACiiigAooooAKKKKACiiigAooooAKCQBknAFUbrVba3yqnzH9F6fnWJd6hcXZw7bU/uL0/+vW9PDyn5I5a2Mp09FqzUvtYSPMdrh3/AL/Yf41jIs95cYG6SRupNOs7OW7k2xjgfeY9BXSWdnFaR7Yxkn7zHqa3lKFBWjuccIVcXLmnpEZp9glnH/ekb7zf0FW6KK4pScndnqQhGC5Y7BRRRSKCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKRgGUqwBB6g0tFAGLf6P1ktPxjP9KxmVlYqwII6gjpXZ1Xu7KC7X96vzdmHUV1UsS1pI8+vgVL3qejOTorQu9KuLfLIPNj9VHI+oqhXbGSkrpnlzpyg7SVhKKKKogKmt7qe2OYZGX27H8KhopNJ6Mak4u6Nq31zoLiL/gSf4Vow39rP9yZQfRuD+tcpRWEsNB7aHZTx1WO+p2lFchFcTQ/6qV0+jVaj1e8TrIr/wC8orB4SXRnVHMIP4k0dLRWEmuzD78KH6EipBrw/itj+D//AFqh4ep2NljaL6mzRWR/b0f/ADwb/vqkOvL2tyfq/wD9al7Cp2H9co/zGxRWG2vSH7kCj6tmoH1m8b7pRP8AdX/GqWGqMh46ittTo6hmu7eD/WzIp9M5P5VzEt3czf6yZyPTPH5VBWscJ/MzCeY/yx+83p9cjXIt4y59W4FZdzf3NzkSSEL/AHV4FVat2mn3F0QUXan99uB/9etlTp01c5JVq1d8v4Iq1p2OkSTYkucxp/d7n/CtSz02C1wwG+T+839PSrlYVMVfSB2UMAl71T7hkUSQxhIlCqOgFPoorj3PSStogooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAqrdadbXOS6bX/vLwatUU4ycXdEyhGatJXOeuNFuI8mEiVfToaz5I3jbbIjK3oRiuxpskaSrtkRWHowzXTDFSXxK5w1Mvg9YOxxtFdJNo9pJygaM/wCyeP1qlLoUo/1Uyt7MMV0RxNN9bHHPBVo7K5kUVdk0u9T/AJYlh6qQarvbzp9+GRfqprVTi9mc8qc47pkVFL0pKogKKKWgBKKkWGV/uRO30Ump49NvJOkDD/e4/nUuUVuy405y2TKlFasWhzt/rZUQe3Jq7DotsnMheQ+5wP0rOWIprqbwwVaXS3qc8qlmCqCSewFX7fSLqbBcCJfVuv5V0EUEUIxFGqfQVJXPPFt/Cjsp5fFazdyja6VbQYZl81/Vun5VeoormlJyd2zuhTjBWirBRRRUlhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAIVDdQD9RTTDEesSf98in0U7sTSYzyIR0iT/vkU4Kq/dUD6CloouwskFFFFIYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH/2Q==" alt="Polarstar Chemical" width="48" height="20">
+      <div class="nav-logo-img">P</div>
       Polarstar Chemical
     </a>
     <ul class="nav-links">
@@ -484,6 +458,7 @@
     </ul>
   </div>
 </nav>
+
 <!-- ===== HERO ===== -->
 <header class="hero">
   <div class="hero-particles"></div>
@@ -492,7 +467,6 @@
     <div>
       <div class="hero-badge"><span class="dot"></span> China-Based · Global Supply Partner</div>
       <h1>Premium <span>Coalescing Agents</span> & Industrial Solvents</h1>
-      <div class="hero-slogan">Polar Star — Your All-in-One Source for Coating Excellence</div>
       <p>
         Trusted chemical supply partner for paints, coatings, inks, and industrial sectors worldwide.
         Quality products, competitive pricing, dedicated service.
@@ -515,13 +489,14 @@
     </div>
   </div>
 </header>
+
 <!-- ===== STATS ===== -->
 <div class="stats-bar">
   <div class="stats-inner">
     <div class="stat-item">
       <div class="stat-icon">🧪</div>
-      <div class="stat-num">20+</div>
-      <div class="stat-label">Products</div>
+      <div class="stat-num">10+</div>
+      <div class="stat-label">Core Products</div>
     </div>
     <div class="stat-divider"></div>
     <div class="stat-item">
@@ -549,209 +524,155 @@
   <div class="products-inner">
     <div class="section-header">
       <div class="section-label">Our Products</div>
-      <h2>Coating-Focused Chemical Portfolio</h2>
-      <p>Comprehensive solutions for paints, coatings, inks, and industrial formulations — from coalescents to pigments.</p>
+      <h2>Comprehensive Chemical Portfolio</h2>
+      <p>From essential coalescing agents to premium high-boiling solvents — everything your formulation needs.</p>
     </div>
 
-    <!-- Category 1: ⭐ Coalescing Agent -->
+    <!-- Category 1: ⭐ CORE Coalescing Agents -->
     <div class="product-category c1">
       <div class="cat-header">
-        <div class="cat-icon-box c1"><svg viewBox="0 0 48 48" fill="none"><path d="M24 5L29 18L43 18L32 26L36 40L24 32L12 40L16 26L5 18L19 18L24 5Z" fill="currentColor"/></svg></div>
+        <div class="cat-icon-box c1">🧪</div>
         <div>
-          <div class="cat-title">⭐ Coalescing Agent <span style="font-size:12px;font-weight:500;background:#2563eb;color:#fff;padding:2px 10px;border-radius:10px;margin-left:8px;vertical-align:middle;">Flagship</span></div>
-          <div class="cat-desc">Industry-standard film-forming aid for water-based paints & coatings</div>
+          <div class="cat-title">⭐ Coalescing Agents <span style="font-size:12px;font-weight:500;background:#2563eb;color:#fff;padding:2px 10px;border-radius:10px;margin-left:8px;vertical-align:middle;">Core</span></div>
+          <div class="cat-desc">Essential film-forming agents for water-based paints & coatings — our flagship line</div>
         </div>
       </div>
       <div class="product-grid">
         <div class="product-card">
           <div class="prod-icon">🎨</div>
-          <h4>Coalescing Agent C12</h4>
-          <div class="alias">Texanol Equivalent </div>
-          <div class="desc">Industry gold standard for water-based coatings. Excellent low-temperature film formation, broad emulsion compatibility. Counter-types: Eastman Texanol, Synthomer NX795.</div>
+          <h4>Texanol / RTC-12</h4>
+          <div class="alias">C₁₂ Ester Alcohol</div>
+          <div class="desc">Industry gold standard. Excellent low-temperature film formation for architectural & industrial water-based coatings.</div>
           <div class="tags"><span class="tag">Architectural</span><span class="tag">Industrial</span><span class="tag">Water-based</span></div>
+        </div>
+        <div class="product-card">
+          <div class="prod-icon">✨</div>
+          <h4>PNB</h4>
+          <div class="alias">Propylene Glycol n-Butyl Ether</div>
+          <div class="desc">High-performance coalescent with strong solvency. Perfect for high-gloss and industrial maintenance coatings.</div>
+          <div class="tags"><span class="tag">High Gloss</span><span class="tag">Industrial</span></div>
+        </div>
+        <div class="product-card">
+          <div class="prod-icon">🕐</div>
+          <h4>DPNB</h4>
+          <div class="alias">Dipropylene Glycol n-Butyl Ether</div>
+          <div class="desc">Slow-evaporating for extended open time. Ideal for automotive and water-based industrial coatings.</div>
+          <div class="tags"><span class="tag">Automotive</span><span class="tag">Extended Open Time</span></div>
+        </div>
+        <div class="product-card">
+          <div class="prod-icon">💎</div>
+          <h4>TPNB</h4>
+          <div class="alias">Tripropylene Glycol n-Butyl Ether</div>
+          <div class="desc">Ultra-high boiling coalescent for premium formulations. Maximum film integrity under demanding conditions.</div>
+          <div class="tags"><span class="tag">Premium</span><span class="tag">High Temp</span></div>
         </div>
       </div>
     </div>
 
-    <!-- Category 2: Glycol Ethers -->
+    <!-- Category 2: Glycol Ethers — Standard -->
     <div class="product-category c2">
       <div class="cat-header">
-        <div class="cat-icon-box c2"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6L43 16V36L24 46L5 36V16L24 6Z" stroke="currentColor" stroke-width="2.5" fill="currentColor" opacity="0.2"/><path d="M24 14L35 20V32L24 38L13 32V20L24 14Z" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+        <div class="cat-icon-box c2">⚗️</div>
         <div>
-          <div class="cat-title">Glycol Ethers & Acetates</div>
-          <div class="cat-desc">Versatile solvents for coatings, inks, and industrial cleaning</div>
+          <div class="cat-title">Glycol Ethers — Standard Grade</div>
+          <div class="cat-desc">Versatile cost-effective solvents for coatings, inks, and cleaning applications</div>
         </div>
       </div>
       <div class="product-grid">
+        <div class="product-card">
+          <div class="prod-icon">🖌️</div>
+          <h4>DPM</h4>
+          <div class="alias">Dipropylene Glycol Methyl Ether</div>
+          <div class="desc">The versatile workhorse — balanced evaporation rate. Widely used in coatings, inks, and cleaners.</div>
+          <div class="tags"><span class="tag">Coatings</span><span class="tag">Inks</span><span class="tag">Cleaning</span></div>
+        </div>
         <div class="product-card">
           <div class="prod-icon">💧</div>
           <h4>PM</h4>
           <div class="alias">Propylene Glycol Methyl Ether</div>
           <div class="desc">Light, fast-evaporating glycol ether. Excellent for water-based coatings and electronic cleaning.</div>
-          <div class="tags"><span class="tag">Water-based</span><span class="tag">Electronics</span></div>
+          <div class="tags"><span class="tag">Water-based</span><span class="tag">Electronics</span><span class="tag">Cleaning</span></div>
         </div>
         <div class="product-card">
-          <div class="prod-icon">🖌️</div>
-          <h4>PMA</h4>
-          <div class="alias">Propylene Glycol Methyl Ether Acetate</div>
-          <div class="desc">High-performance acetate solvent. Exceptional solvency for automotive, electronics, and premium coatings.</div>
+          <div class="prod-icon">🧴</div>
+          <h4>EB / 防白水</h4>
+          <div class="alias">Ethylene Glycol Butyl Ether</div>
+          <div class="desc">The most widely used glycol ether solvent. Essential for water-based paints, cleaners, and inks.</div>
+          <div class="tags"><span class="tag">Coatings</span><span class="tag">Cleaning</span><span class="tag">High Volume</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category 3: Glycol Ethers — High-Boiling -->
+    <div class="product-category c2">
+      <div class="cat-header">
+        <div class="cat-icon-box c1">🔥</div>
+        <div>
+          <div class="cat-title">Glycol Ethers — High-Boiling / Premium</div>
+          <div class="cat-desc">Specialty solvents for demanding automotive, electronics, and high-temperature applications</div>
+        </div>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="prod-icon">🏎️</div>
+          <h4>DPMA</h4>
+          <div class="alias">Dipropylene Glycol Methyl Ether Acetate</div>
+          <div class="desc">Premium high-boiling solvent with exceptional solvency. Top choice for automotive and electronics.</div>
           <div class="tags"><span class="tag">Automotive</span><span class="tag">Electronics</span><span class="tag">Premium</span></div>
         </div>
         <div class="product-card">
-          <div class="prod-icon">✨</div>
-          <h4>PnB</h4>
-          <div class="alias">Propylene Glycol Butyl Ether</div>
-          <div class="desc">Strong coalescing solvent. Perfect for high-gloss and industrial maintenance coatings.</div>
-          <div class="tags"><span class="tag">High Gloss</span><span class="tag">Industrial</span></div>
-        </div>
-        <div class="product-card">
           <div class="prod-icon">🕐</div>
-          <h4>DPnB</h4>
-          <div class="alias">Dipropylene Glycol Butyl Ether</div>
-          <div class="desc">Slow-evaporating for extended open time. Ideal for automotive and water-based industrial coatings.</div>
-          <div class="tags"><span class="tag">Automotive</span><span class="tag">Extended Open Time</span></div>
+          <h4>TPM</h4>
+          <div class="alias">Tripropylene Glycol Methyl Ether</div>
+          <div class="desc">Slow-evaporating specialist. Perfect for screen inks, overprint varnishes, and high-heat uses.</div>
+          <div class="tags"><span class="tag">Screen Inks</span><span class="tag">High Temp</span></div>
         </div>
         <div class="product-card">
-          <div class="prod-icon">🧴</div>
-          <h4>BGA</h4>
-          <div class="alias">Ethylene Glycol Monobutyl Ether Acetate</div>
-          <div class="desc">High-boiling acetate solvent with strong solvency power. Widely used in coatings, inks, and industrial cleaners.</div>
-          <div class="tags"><span class="tag">Coatings</span><span class="tag">Inks</span><span class="tag">High Boiling</span></div>
+          <div class="prod-icon">🛢️</div>
+          <h4>DB</h4>
+          <div class="alias">Diethylene Glycol Butyl Ether</div>
+          <div class="desc">High-boiling, low-evaporation solvent. Ideal for baking enamels, industrial cleaners, and printing inks.</div>
+          <div class="tags"><span class="tag">Baking Enamels</span><span class="tag">Inks</span><span class="tag">High Boiling</span></div>
         </div>
       </div>
     </div>
 
-    <!-- Category 3: Paint Additives -->
-    <div class="product-category c1">
-      <div class="cat-header">
-        <div class="cat-icon-box c1"><svg viewBox="0 0 48 48" fill="none"><path d="M16 6H32V20L40 42H8L16 20V6Z" stroke="currentColor" stroke-width="2.5" fill="currentColor" opacity="0.15"/><line x1="20" y1="6" x2="20" y2="14" stroke="currentColor" stroke-width="2"/></svg></div>
-        <div>
-          <div class="cat-title">Paint & Coating Additives</div>
-          <div class="cat-desc">Performance enhancers for modern coating formulations</div>
-        </div>
-      </div>
-      <div class="product-grid">
-        <div class="product-card">
-          <div class="prod-icon">🧬</div>
-          <h4>CAB</h4>
-          <div class="alias">Cellulose Acetate Butyrate</div>
-          <div class="desc">Binder for protective & decorative coatings on metal, wood, plastics, and leather. Available: CAB-381-0.5, CAB-381-2, CAB-551-0.01 (Eastman counter-types).</div>
-          <div class="tags"><span class="tag">Automotive</span><span class="tag">Wood</span><span class="tag">Plastics</span><span class="tag">Leather</span></div>
-        </div>
-        <div class="product-card">
-          <div class="prod-icon">🫧</div>
-          <h4>Defoamer</h4>
-          
-          <div class="desc">Eliminates normal & abnormal bubbles in coatings. Counter-types: Tego 810/825/901W, BYK 019/022/024, DOW DC-65/AFE-1267, BASF NDW/2157.</div>
-          <div class="tags"><span class="tag">Aqueous</span><span class="tag">Solvent-based</span></div>
-        </div>
-        <div class="product-card">
-          <div class="prod-icon">🎯</div>
-          <h4>Dispersant</h4>
-          
-          <div class="desc">Wetting, dispersing & stabilizing pigments for best performance. Counter-types: Solsperse, BYK P104S/161/163, TEGO 750W/755W, BASF N40/A40.</div>
-          <div class="tags"><span class="tag">Pigments</span><span class="tag">Universal</span></div>
-        </div>
-        <div class="product-card">
-          <div class="prod-icon">🧴</div>
-          <h4>Thickener</h4>
-          <div class="alias">Cellulose Thickeners · HEC / HPMC / HEMC</div>
-          <div class="desc">Controls water binding in cement, gypsum & fillers for high adhesion. Viscosity grades: 400 to 200,000.</div>
-          <div class="tags"><span class="tag">Construction</span><span class="tag">Wall Coatings</span></div>
-        </div>
-        <div class="product-card">
-          <div class="prod-icon">🪨</div>
-          <h4>Bentonite</h4>
-          <div class="alias">Rheology Modifier </div>
-          <div class="desc">Forms gel with organic solvents & oils. Increases viscosity, prevents settling, improves flow. Counter-types: Bentone 34/27/52, Bengel 434/818, Claytone 40.</div>
-          <div class="tags"><span class="tag">Anti-settling</span><span class="tag">Thixotropy</span></div>
-        </div>
-        <div class="product-card">
-          <div class="prod-icon">⚖️</div>
-          <h4>pH Stabilizer</h4>
-          <div class="alias">AMP-95 Equivalent</div>
-          <div class="desc">High-efficiency pH control, enhances pigment & latex dispersion, controls corrosion. Counter-type: DOW AMP-95.</div>
-          <div class="tags"><span class="tag">Water-based</span><span class="tag">pH Control</span></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Category 4: Pigments & Fillers -->
-    <div class="product-category c2">
-      <div class="cat-header">
-        <div class="cat-icon-box c2"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6C24 6 10 22 10 32C10 39.7 16.3 46 24 46C31.7 46 38 39.7 38 32C38 22 24 6 24 6Z" stroke="currentColor" stroke-width="2.5" fill="currentColor" opacity="0.2"/><circle cx="28" cy="32" r="5" fill="currentColor"/></svg></div>
-        <div>
-          <div class="cat-title">Pigments & Fillers</div>
-          <div class="cat-desc">Essential raw materials for color, coverage, and performance</div>
-        </div>
-      </div>
-      <div class="product-grid">
-        <div class="product-card">
-          <div class="prod-icon">⚪</div>
-          <h4>Titanium Dioxide</h4>
-          <div class="alias">TiO₂ </div>
-          <div class="desc">World's best white pigment. Rutile grade (sulphate & chloride process). CAS: 13463-67-7.</div>
-          <div class="tags"><span class="tag">Universal</span><span class="tag">High Opacity</span></div>
-        </div>
-        <div class="product-card">
-          <div class="prod-icon">🟤</div>
-          <h4>Iron Oxide</h4>
-          
-          <div class="desc">Most widely used inorganic pigments. Available in red, yellow, black, orange & brown.</div>
-          <div class="tags"><span class="tag">Colorants</span><span class="tag">Construction</span></div>
-        </div>
-        <div class="product-card">
-          <div class="prod-icon">⬜</div>
-          <h4>Barium Sulfate</h4>
-          <div class="alias">BaSO₄ </div>
-          <div class="desc">Premium filler for powder coatings & paints. Precipitated & natural grades for high-gloss to matte finishes.</div>
-          <div class="tags"><span class="tag">Fillers</span><span class="tag">Powder Coatings</span></div>
-        </div>
-        <div class="product-card">
-          <div class="prod-icon">⬛</div>
-          <h4>Carbon Black</h4>
-          
-          <div class="desc">High-performance black pigment. Excellent tinting strength, UV protection, and conductivity.</div>
-          <div class="tags"><span class="tag">Pigments</span><span class="tag">UV Protection</span></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Category 5: Hydrocarbon Solvents (de-emphasized) -->
+    <!-- Category 4: Hydrocarbon Solvents — Partner Factory -->
     <div class="product-category c3">
       <div class="cat-header">
-        <div class="cat-icon-box c3"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6L40 16V36L24 46L8 36V16L24 6Z" stroke="currentColor" stroke-width="2.5" fill="currentColor" opacity="0.15"/><path d="M24 6V46M8 16L24 26L40 16" stroke="currentColor" stroke-width="2"/></svg></div>
+        <div class="cat-icon-box c3">🤝</div>
         <div>
           <div class="cat-title">Hydrocarbon Solvents <span style="font-size:11px;font-weight:400;background:#fef3c7;color:#92400e;padding:2px 10px;border-radius:10px;margin-left:8px;vertical-align:middle;border:1px solid #fde68a;">Partner Factory</span></div>
-          <div class="cat-desc">High-purity industrial solvents via trusted manufacturing partners — available upon request</div>
+          <div class="cat-desc">High-purity solvents via trusted manufacturing partners — rubber, adhesives & specialty use</div>
         </div>
       </div>
       <div class="product-grid">
         <div class="product-card">
           <div class="prod-icon">🔗</div>
           <h4>Cyclohexane</h4>
-          <div class="alias">C₆H₁₂ </div>
-          <div class="desc">High-purity cyclic hydrocarbon for rubber processing, adhesives, and chemical synthesis.</div>
-          <div class="tags"><span class="tag">Rubber</span><span class="tag">Adhesives</span></div>
+          <div class="alias">C₆H₁₂ · 环己烷</div>
+          <div class="desc">High-purity cyclic hydrocarbon. Essential for rubber processing, adhesives, and chemical synthesis.</div>
+          <div class="tags"><span class="tag">Rubber</span><span class="tag">Adhesives</span><span class="tag">High Purity</span></div>
         </div>
         <div class="product-card">
           <div class="prod-icon">🧹</div>
           <h4>MCH</h4>
-          <div class="alias">Methylcyclohexane </div>
-          <div class="desc">Premium hydrocarbon solvent. Ideal for adhesives, sealants, and precision cleaning.</div>
-          <div class="tags"><span class="tag">Sealants</span><span class="tag">Cleaning</span></div>
+          <div class="alias">Methylcyclohexane · 甲基环己烷</div>
+          <div class="desc">Premium hydrocarbon with excellent solvency. Ideal for adhesives, sealants, and precision cleaning.</div>
+          <div class="tags"><span class="tag">Sealants</span><span class="tag">Precision Cleaning</span></div>
         </div>
         <div class="product-card">
           <div class="prod-icon">📐</div>
           <h4>Isooctane</h4>
-          <div class="alias">2,2,4-Trimethylpentane </div>
-          <div class="desc">Ultra-high purity reference-grade hydrocarbon for lab and specialty applications.</div>
-          <div class="tags"><span class="tag">Lab Grade</span><span class="tag">Specialty</span></div>
+          <div class="alias">2,2,4-Trimethylpentane · 异辛烷</div>
+          <div class="desc">Ultra-high purity reference-grade hydrocarbon for fuel testing, lab, and specialty applications.</div>
+          <div class="tags"><span class="tag">Lab Grade</span><span class="tag">Reference Standard</span></div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
 <!-- ===== INDUSTRIES ===== -->
 <div class="industries" id="industries">
   <div class="industries-inner">
@@ -772,6 +693,7 @@
     </div>
   </div>
 </div>
+
 <!-- ===== WHY US ===== -->
 <section class="why-us" id="why">
   <div class="section-header">
@@ -802,6 +724,7 @@
     </div>
   </div>
 </section>
+
 <!-- ===== CTA ===== -->
 <div class="cta-banner">
   <div class="cta-inner">
@@ -810,6 +733,7 @@
     <a href="#contact" class="btn-white">Get Your Quote Today →</a>
   </div>
 </div>
+
 <!-- ===== CONTACT ===== -->
 <div class="contact-section" id="contact">
   <div class="contact-inner">
@@ -826,7 +750,7 @@
       <h3>Send an Inquiry</h3>
       <form name="contact" method="POST" action="https://formsubmit.co/marketing@polarstarchem.com">
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://polarstarchem.github.io/thanks.html">
+        <input type="hidden" name="_next" value="https://polarstarchem.com/thanks.html">
         <input type="hidden" name="_subject" value="New Inquiry - Polarstar Chemical">
         <input type="hidden" name="_template" value="table">
         <div class="form-row">
@@ -854,7 +778,7 @@
               <option>TPNB</option>
               <option>DPM</option>
               <option>PM</option>
-              <option>EB / </option>
+              <option>EB / 防白水</option>
               <option>TPM</option>
               <option>DPMA</option>
               <option>DB</option>
@@ -874,6 +798,8 @@
     </div>
   </div>
 </div>
+
 <footer>© 2026 Polarstar Chemical. All rights reserved.</footer>
+
 </body>
 </html>
